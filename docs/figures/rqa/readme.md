@@ -1,4 +1,11 @@
 
+`cd /srep2019/docs/figures/rqa`:
 
 
-inkscape --export-pdf pdf/rqa-bp.pdf vector/rqa-bp.svg
+sh ../low-res-pdf.sh rqa_epsilons 5 75
+sh ../low-res-pdf.sh rqa_sensors_activities 5 75
+
+
+
+
+
