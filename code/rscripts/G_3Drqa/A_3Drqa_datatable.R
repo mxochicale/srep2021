@@ -90,8 +90,8 @@ W<-NULL#rqas for all windows
 #windowsl <- c(250)
 #windowsn <- c('w5')
 
-windowsl <- c(500)
-windowsn <- c('w10')
+#windowsl <- c(500)
+#windowsn <- c('w10')
 
 #windowsl <- c(750)
 #windowsn <- c('w15')
@@ -103,6 +103,10 @@ windowsn <- c('w10')
 #windowsl <- c(100,250,500,750)
 #windowsn <- c('w2', 'w5', 'w10', 'w15')
 #
+windowsl <- c(100,250,500)
+windowsn <- c('w2', 'w5', 'w10')
+
+
 
 
 
@@ -198,7 +202,7 @@ wdata <- xdata[,.SD[windowframe],by=.(Participant,Activity,Sensor)];
 
 		if (number_of_participants == 1) {
 		setkey(awdata, Participant)
-		pNN <- c('p03')
+		pNN <- c('p01')
 		pawdata <- awdata[.(
 				pNN
 				)]
