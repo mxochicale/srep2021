@@ -4,10 +4,10 @@
 \usepackage[T1]{fontenc}
 \graphicspath{{../}} %%%REPOSITORY PATH
 
-\title{Strengths and Weaknesses of Recurrent Quantification Analysis 
-in the context of Human-Humanoid Interaction}
+\title{The Application of Recurrent Quantification Analysis 
+to Human-Humanoid Interaction}
 \author[1,*]{Miguel Xochicale}
-\author[1]{Chirs Baber}
+\author[1]{Chris Baber}
 \affil[1]{University of Birmingham, 
 	School of Engineering, 
 	Birmingham, 
@@ -35,12 +35,12 @@ imitated simple vertical and horizontal arm movements in normal
 and faster speed from an humanoid robot.
 With four window lengths and three levels of smoothed time series, 
 we found visual differences in the patterns of RSSs and RPs. 
-Then using metrics of RQA, we find out that the type of movements
-and the level of smoothness affects those metrics. 
-Our contribution for this work is that entropy values from RQA were 
-well distributed and presenting variation in all the conditions for time series. 
+Then with the use of RQA metrics, we find out that the type of 
+movements and the level of smoothness affects those metrics. 
+Specifically, entropy values from RQA were well distributed and 
+presented variation in all the conditions for time series. 
 This work have then the potential to enhance the development of 
-better diagnostic tools for various applications rehabilitation, 
+better diagnostic tools for various applications in rehabilitation, 
 sport science or for new forms of human-robot interaction.
 \end{abstract}
 %226
@@ -55,20 +55,25 @@ sport science or for new forms of human-robot interaction.
 
 
 \section*{Introduction}
-Human movement variability is a complex system where not only multiple
+Human movement requires a complex system where not only multiple
 joints and limbs are involved for a specific task in a determined environment
-but also how we process the external information with all of our available senses 
-and use our experiences \cite{davids2003}. 
-Recent studies in human motion recognition have revealed the possibility to 
-estimate features from lower dimensions signals to distinguish differences between 
+but also perception and action of movement affects the physical performance 
+\cite{davids2003}. 
+In contrast, variability in humanoid movement is usually very small,
+as a result of the control system used. This means that, while humanoids 
+solve the degrees of freedom problem through join design and algorithms,
+humans tend to have more fluid and flexible approach. Consequently, 
+one can see much variability in the performance of even the simplest task.
+Studies of human motion reveal the possibility to 
+estimate features from lower dimension signals to distinguish differences between 
 styles of pedalling motion \cite{Quintana-Duque2012, Quintana-Duque2016}, 
-gait identification \cite{sama2013, frank2010} 
-or pattern recognition from biological signals \cite{gomezgarcia2014}.
-The lower dimension signals from biological signals are time series 
+gait identification \cite{sama2013, frank2010},
+and detection of pathologies \cite{gomezgarcia2014}.
+The lower dimension signals from biological systems are time series 
 of $1-$dimension in $\mathbb{R}$ which commonly are 
 noisy, nonlinear and non-stationary \cite{gomezgarcia2014}.
-Hence, we are hypothesising that nonlinear dynamics can be used to 
-objectively quantify such human movement variability of lower
+Hence, nonlinear dynamics can be used to 
+objectively quantify variability of lower
 dimension signals \cite{Quintana-Duque2012, Quintana-Duque2016, sama2013, 
 frank2010, gomezgarcia2014, marwan2011, stergiou2011}.
 For instance, Bradley et al. 2015 \cite{bradley2015} reviewed methods for
@@ -79,20 +84,19 @@ where an $n$-dimensional reconstructed state space using $1-$dimensional
 time series,
 can preserve the topological properties of an unknown $M$-dimensional 
 state space \cite{takens1981}.
-Also, Bradley et al. 2015 \cite{bradley2015} reviewed the use of 
+Bradley et al. 2015 \cite{bradley2015} also reviewed the use of 
 Recurrence Plots (RPs), a graphical representation of a two-dimensional map 
 which show black and white dots as recurrences in a given $n$-dimensional system, 
-and Recurrence Quantification Analysis (RQA) metrics can pick out important 
-directions and statistics in RPs.
-In general, RPs and RQA provide a more intuitive meaning of the time series,
+and Recurrence Quantification Analysis (RQA) metrics compute statistics in RPs.
+In general, RPs and RQA provide an intuitive meaning of the time series,
 for instance, RQA is quantitatively and qualitatively independent of 
 embedding dimension (also verified experimentally \cite{iwanski1998}).
 However, the estimation of embedding parameters and the selection of the 
 right parameters to perform RQA is still an open problem.
 Bradley et al. 2015 \cite{bradley2015} pointed out that
 there is no general technique that can be used to compute the embedding
-parameters since the time series are system-dependent which means that
-once computing the values for embedding parameters, these may only work for
+parameters since time series are system-dependent which means that
+computing the values for embedding parameters may only work for
 one purpose (e.g., prediction) and may not work well for another purpose
 (e.g., computing dynamical invariants).
 Additionally, the methodologies of nonlinear dynamics for 
@@ -100,7 +104,7 @@ computing the embedding parameters e.g., autocorrelation, mutual information,
 and nearest neighbour require data which is well 
 sampled and with little noise \cite{garland2016}
 or require purely deterministic signals \cite{kantz2003}.
-Similarly, these nonlinear analysis methods for computing the embedding 
+Thus, these nonlinear analysis methods for computing the embedding 
 parameters can break down
 with real-world datasets which have generally different length, 
 different values of accuracy and precision (rounding errors due to finite 
@@ -151,56 +155,9 @@ The primary aim of this work is to explore the following questions:
 %*******************************************************************************
 %*******************************************************************************
 \section*{Results}
-To give insight to the research questions, 
-we considered various conditions of time series collected for this work 
-(see Experiment section for more details) which are described as follows
-\begin{itemize}
-\item Three levels of smoothness for the normalised data 
-	(sg0zmuv, sg1zmuv and sg2zmuv), computed from two different filter 
-	lengths (29 and 159) with the same polynomial degree 
-	of 5 using the function \texttt{sgolay(p,n,m)} \cite{Rsignal},
-\item four velocities arm movement activities: 
-	horizontal normal (HN), horizontal faster (HF), 
-	vertical normal (VN), and vertical faster (VF), and
-\item four window lengths: 2-sec (100 samples), 5-sec (250 samples), 
-	10-sec (500 samples) and 15-sec (750 samples).
-\end{itemize}
 
-%\subsection*{Time series}
-After the data collection, raw time series were windowed, normalised and 
-smoothed. Then, due to space limitations and to have simple visualisation, 
-we only present 10-sec (500 samples) window length time series for 
-three participants (p01, p01 and p03) performing horizontal 
-arm movements (axis GyroZ) and vertical arm movements (axis GyroY) (Figs \ref{fig:ts}). 
-%%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/timeseries/pdf/fig1}
-    	\caption{ 
-	{\bf Time series for horizontal and vertical arm movements.}
-		(A/D) raw-normalised (sg0zmuv), 
-		(B/E) normalised-smoothed 1 (sg1zmuv) and
-		(C/F) normalised-smoothed 2 (sg2zmuv).
-		Time series are only for three participants 
-		($p01$, $p02$, and $p03$) 
-		for horizontal and vertical arm movements in normal 
-		and faster velocity (HN, HF, VN, VF) 
-		with the normalised GyroZ or GyroY axis 
-		and with one sensor attached to the participant (HS01) 
-		and other sensor attached to the robot (RS01).	
-	Code and data to reproduce the figure is available from \cite{srep2019}.
-        }
-    \label{fig:ts}
-\end{figure}
-%%---------------------------------(FIGURE)------------------------------------
-
-
-
-
-
-%\subsection*{Reconstructed State Spaces using Uniform Time-Delay Embedding}
 \subsection*{Reconstructed State Spaces}
-One of the main challenges of the implementation of 
+One of the challenges of the implementation of 
 Uniform Time-Delay Embedding to Reconstructed State Spaces is the 
 selection of embedding parameters because each time series is unique in 
 terms of its structure (modulation of amplitude, frequency and phase) 
@@ -225,12 +182,11 @@ with False Nearest Neighbour and Average Mutual Information.
 %Recurrence Plots (RPs) and 
 %Recurrence Quantification Analysis (RQAs).
 Figures \ref{fig:caoami}(A) show that minimum embedding values 
-for sensor HS01 appear to show more variations as their 
-interquartile range of the box plots are near to 1 
+for sensor HS01 appear to show more variations as 
+interquartile range is near to 1 
 with three exceptions (HF sg0, VN sg0, and VF sg1).
 Minimum embedding values appear to be constant for sensor RS01 
-as their interquartile range 
-in the box plots are near to 0.1 with the exception of 
+as interquartile range is near to 0.1 with the exception of 
 two axis (HF sg0 and VF sg1).
 Additionally, it can be seen in Figs \ref{fig:caoami}(A) a 
 decrease of mean values (rhombus) in the box plots
@@ -241,7 +197,7 @@ It can be seen that values for HS01 tend to be more spread as the smoothness
 of the time series is increasing 
 (see the increase of both mean (rhombus) and interquartile range).
 However, AMI values for RS01 do not show such increase in relation with
-the increase of smoothness excepting for HF and VF
+the increase of smoothness except for HF and VF
 (Figs \ref{fig:caoami}(B)).
 
 We also computed an overall minimum embedding parameters that represent 
@@ -314,7 +270,7 @@ Figs~\ref{fig:rss_aVw10} for vertical arm movements.
 \end{figure}
 %%---------------------------------(FIGURE)------------------------------------
 
-Evidently, it is easy to observe by eye the differences in each of the
+It is easy to observe by eye the differences in each of the
 trajectories in the reconstructed state spaces 
 (Figs~\ref{fig:rss_aHw10}, \ref{fig:rss_aVw10}), 
 however one might be not objective when quantifying those differences 
@@ -570,9 +526,6 @@ is associated with both the increase of ENTR values and its smoothed 3D shape.
 
 
 \subsection*{Other effects on 3D RQA ENTR values}
-% metrics with different embedding parameters, 
-%	recurrence thresholds, window lengths, levels of smoothness, 
-%	and time series structures.}
 
 %Zbilut et al. \cite{zbilut1992} established RQA metrics with the aim of 
 %determining embedding parameters, their method consisted on creating 3D 
@@ -624,87 +577,6 @@ faster velocity and from human sensor (HS01) to robot sensor (RS01)
 
 
 
-%%%---------------------------------(FIGURE)-------------------------------------
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[width=1.0\textwidth]{figures/results/rqa/v03/rqa_plots/topologies/figs/rqas}
-%%\includegraphics[width=1.0\textwidth]{rqas}
-%    \caption{
-%	{\bf 3D surfaces for RQA metrics.}
-%	3D surfaces for REC, DET, RATIO and ENTR values with increasing 
-%	pair embedding parameters ($0 \ge m \le 10$, $0 \ge \tau \le 10$) 
-%	and recurrence thresholds (  $ 0.2 \ge \epsilon \le 3 $).
-%	RQA metrics values for time series of participant p01 using HS01 sensor, 
-%	HN activity and sg0zmuvGyroZ axis and 500 samples window length.
-%        R code to reproduce the figure is available from \cite{hwum2018}.
-%	}
-%\label{fig:topo_rqas}
-%\end{figure}
-%%%---------------------------------(FIGURE)------------------------------------
-
-%%%---------------------------------(FIGURE)-------------------------------------
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[width=1.0\textwidth]{figures/results/rqa/v03/rqa_plots/topologies/figs/w}
-%%\includegraphics[width=1.0\textwidth]{w}
-%    \caption{
-%	{\bf 3D surfaces for RQAs metrics with four window lengths.}
-%	3D surfaces of RQAs metric values with increasing embedding 
-%	parameters and recurrence thresholds are for four window lengths 
-%	(w100, w250, w500 and  w750).
-%	RQA metrics values are for time series of participant p01 
-%	using HS01 sensor, HN activity and sg0zmuvGyroZ axis.
-%	R code to reproduce the figure is available from \cite{hwum2018}.
-%        }
-%\label{fig:topo_sensoractivities}
-%\end{figure}
-%%%---------------------------------(FIGURE)------------------------------------
-%%%---------------------------------(FIGURE)-------------------------------------
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[width=1.0\textwidth]{figures/results/rqa/v03/rqa_plots/topologies/figs/s}
-%%\includegraphics[width=1.0\textwidth]{s}
-%    \caption{
-%	{\bf 3D surfaces for RQA metrics with three levels of smoothness.}
-%       	3D surfaces of RQAs metric values with increasing embedding 
-%	parameters and recurrence thresholds are for three levels of 
-%	smoothness (sg0zmuvGyroZ, sg1zmuvGyroZ and sg1zmuvGyroZ).
-%	RQA metrics values are for time series of participant p01 using 
-%	HS01 sensor, HN activity and 500 samples window length.
-%	R code to reproduce the figure is available from \cite{hwum2018}.
-% }
-%\label{fig:topo_smoothness}
-%\end{figure}
-%%%---------------------------------(FIGURE)------------------------------------
-%
-%
-%%%---------------------------------(FIGURE)-------------------------------------
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[width=1.0\textwidth]{figures/results/rqa/v03/rqa_plots/topologies/figs/p}
-%%\includegraphics[width=1.0\textwidth]{p}
-%    \caption{
-%	{\bf 3D surfaces for RQA metrics with three participants.}
-%       	3D surfaces of RQAs metric values for participants p01, p02 and p03 
-%	with increasing embedding parameters and recurrence thresholds.
-%	RQA metrics values are for time series of HS01 sensor, 
-%	HN activity and 500 samples window length.
-%	R code to reproduce the figure is available from \cite{hwum2018}.
-% }
-%\label{fig:topo_participants}
-%\end{figure}
-%%%---------------------------------(FIGURE)------------------------------------
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
 %*******************************************************************************
 %*******************************************************************************
 %*******************************************************************************
@@ -723,7 +595,7 @@ faster velocity and from human sensor (HS01) to robot sensor (RS01)
 %
 
 
-It is evidently that time series from different sources 
+It is evident that time series from different sources 
 (participants, movements, axis type, window length or levels of smoothness) 
 presents visual differences for embedding parameters and therefore for RRSs. 
 For which, the selection of embedding parameters was our first challenge 
@@ -737,7 +609,7 @@ the shape of the trajectories in RSSs requires more investigation
 since our original proposed method base on euclidean metric failed 
 to quantify those trajectories. Specially, for trajectories which 
 were not well unfolded. 
-With that in mind, we proceed to apply 
+With that in mind, we apply 
 Recurrence Quantification Analysis (RQA) metrics 
 (REC, DET, RATIO and ENTR) in order to avoid any subjective interpretations 
 or personal bias with regard to the representation of the trajectories in RSSs.
@@ -1654,6 +1526,53 @@ and 15-sec (750-samples).
 
 \subsection*{Data from Inertial Measurement Units} 
 	\label{sec:experiment:subsec:imu}
+
+
+To give insight to the research questions, 
+we considered various conditions of time series collected for this work 
+(see Experiment section for more details) which are described as follows
+\begin{itemize}
+\item Three levels of smoothness for the normalised data 
+	(sg0zmuv, sg1zmuv and sg2zmuv), computed from two different filter 
+	lengths (29 and 159) with the same polynomial degree 
+	of 5 using the function \texttt{sgolay(p,n,m)} \cite{Rsignal},
+\item four velocities arm movement activities: 
+	horizontal normal (HN), horizontal faster (HF), 
+	vertical normal (VN), and vertical faster (VF), and
+\item four window lengths: 2-sec (100 samples), 5-sec (250 samples), 
+	10-sec (500 samples) and 15-sec (750 samples).
+\end{itemize}
+%\subsection*{Time series}
+After the data collection, raw time series were windowed, normalised and 
+smoothed. Then, due to space limitations and to have simple visualisation, 
+we only present 10-sec (500 samples) window length time series for 
+three participants (p01, p01 and p03) performing horizontal 
+arm movements (axis GyroZ) and vertical arm movements (axis GyroY) (Figs \ref{fig:ts}). 
+%%---------------------------------(FIGURE)-------------------------------------
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/timeseries/pdf/fig1}
+    	\caption{ 
+	{\bf Time series for horizontal and vertical arm movements.}
+		(A/D) raw-normalised (sg0zmuv), 
+		(B/E) normalised-smoothed 1 (sg1zmuv) and
+		(C/F) normalised-smoothed 2 (sg2zmuv).
+		Time series are only for three participants 
+		($p01$, $p02$, and $p03$) 
+		for horizontal and vertical arm movements in normal 
+		and faster velocity (HN, HF, VN, VF) 
+		with the normalised GyroZ or GyroY axis 
+		and with one sensor attached to the participant (HS01) 
+		and other sensor attached to the robot (RS01).	
+	Code and data to reproduce the figure is available from \cite{srep2019}.
+        }
+    \label{fig:ts}
+\end{figure}
+%%---------------------------------(FIGURE)------------------------------------
+
+
+
+
 \subsubsection*{Raw data}
 Considering the work of \cite{shoaib2016} which provided evidence of an 
 improvement in recognition activities when combining data from 
