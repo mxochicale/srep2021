@@ -11,7 +11,6 @@ should indicate whether they have had any prior discussions with a
 Scientific Reports Editorial Board Member about the work 
 described in the manuscript.
 
-
 [1] https://www.nature.com/srep/about/editorial-board
 
 Editorial Board

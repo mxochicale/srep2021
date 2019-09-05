@@ -681,27 +681,29 @@ between participants using RSSs, RPs and RQA.
 It is important to mention that some RQA's metrics 
 (e.g. DET and ENTR) are more robust to the effect of 
 smoothness of time series.
-However, using determined RQA metrics will be depend on 
-what one want to quantify, for instance, one can compute 
+Choice of RQA metrics will be depend on 
+what to quantify, for instance, one can compute 
 predicability, organisation,  
 dynamics transitions, or complexity and determinism of the 
 input time series. However, RQA metrics show certain constrains with 
 regard to activity type, window length and structure of the time series.
-%Similarly, such differences in time series created differences in each of the 
-%RQA metrics, 
 For instance, RATIO and ENTR are helpful to distinguish 
 differences in any of the categories of the time series (sensor, activity, 
-level of smoothness and number of participant), however for certain time series
-such as time series from the sensor attached to the robot seemed to have 
-little variations between each of the participants. 
-The latter phenomena was in a way evidently as robot degrees of freedom 
+level of smoothness and number of participant), however time series
+data from the sensor attached to the robot seemed to have 
+little variations between as humanoid degrees of freedom 
 did not allow it to move with a wide range of variability. 
 
-Additionally, we can point out that even thought our experiment is 
+Additionally, we can point out that even though our experiment is 
 limited to twenty healthy right-handed participants of a range age 
 of mean 19.8 SD=1.39, RQA metrics show the potential to quantify 
 human movement variability in the context of 
 human-humanoid imitation activities.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	You need a sentence or two here
+%	to explain why this is claimed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 
 %With that in mind, we conclude that 
 %quantification of human-humanoid imitation activities is possible for 
@@ -733,17 +735,18 @@ human-humanoid imitation activities.
 \section*{Future Work}
 
 \subsection*{Inertial Sensors}
-To have more fundamental understating of nature of signals collected through 
-inertial sensors in the context of human-robot interaction, we are considering 
-to apply derivates to the acceleration data. We can then explore the jerkiness 
-of movements and therefore the nature of arm movements which typically have 
+To better understand the signals collected through 
+inertial sensors in the context of human-humanoid interaction, 
+we could apply derivates to the acceleration data. 
+We can then explore the jerkiness of movements and therefore 
+the nature of arm movements which typically have 
 minimum jerk \cite{flash1985}, its relationship with different body 
 parts \cite{devries1982, mori2012} or the application of higher derivatives 
 of displacement with respect time such as snap, crackle and pop \cite{eager2016}.
 
 \subsection*{RQA ENTR}
 Having shown that RQA ENTR metrics are robust against different data
-time series, we believe that further investigation is required to be done. 
+time series, we believe that further investigation is required. 
 For example, Marwan et al. \cite{marwan2007, marwan2015} reviewed 
 different aspects to compute RPs using different criteria for neighbours, 
 different norms ($L_{1-norm}$, $L_{2-norm}$, or $L_{\infty-norm}$ ) or 
@@ -761,10 +764,9 @@ of the observational noise among many others \cite{marwan2007}.
 %*******************************************************************************
 \section*{Methods}
 \subsection*{State Space Reconstruction}
-The method of state space reconstruction was originally proposed by 
-\cite{packard1980} and formalised by \cite{takens1981}. Since then, different 
-investigations and disciplines have benefited from the use of the method of 
-state space reconstruction \cite{aguirre2009, stergiou2011, frank2010, 
+The method of state space reconstruction \cite{packard1980} 
+\cite{takens1981} has been applied in many disciplines 
+\cite{aguirre2009, stergiou2011, frank2010, 
 sama2013, Quintana-Duque2016}. The method of state space reconstruction is 
 based on uniform time-delay embedding methodology which is a simple 
 matrix implementation that can reconstruct an unknown $d-$dimensional 
@@ -1435,6 +1437,18 @@ to the right hand of the participant and to the left hand of the robot
 IMU sensors with sampling rate of 50Hz provinding tri-axial data of the 
 accelerometer, gyroscope and magnetometer sensors and quaternions 
 \cite{Comotti2014}. 
+
+\subsection*{Ethics}
+The experiments of this work were conducted in November 2016 and participants
+confirmed reading and understanding the participant information sheet of the 
+experiments and were able to withdraw from the experiment at any time without giving
+any reason. The design of the experiments adhered to the University of X
+regulations, data were anonymised and videos were stored only on a 
+personal computer in accordance with the Data Protection Act 1998. 
+%Refer to Appendix D for further information about the ethics, 
+%online participation information sheets and experiment check list.
+
+
 %A further description of the NeMEMSi IMU sensors 
 %is given in \nameref{S1_AppendixB}.
 %%---------------------------------(FIGURE)-------------------------------------
