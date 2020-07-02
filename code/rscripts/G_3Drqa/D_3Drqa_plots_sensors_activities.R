@@ -24,7 +24,6 @@ start.time <- Sys.time()
 # (0) Defining paths for main_path, r_scripts_path, ..., etc.
 
 homepath <- Sys.getenv("HOME")
-main_home_path <- '/quetzalcoalt'
 r_scripts_path <- getwd()
 setwd("../../../")
 github_repo_path <- getwd()
@@ -118,8 +117,8 @@ Wkw <-  Wk[ Window %in% selectWindow ]
 ################################################################################
 ################################################################################
 	## (4.2.1) Activities Selection
-	#activities <- c('HN','HF')
-	activities <- c('VN','VF')
+	activities <- c('HN','HF')
+	#activities <- c('VN','VF')
 
 
 

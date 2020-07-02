@@ -25,25 +25,13 @@ start.time <- Sys.time()
 
 
 homepath <- Sys.getenv("HOME")
-main_home_path <- '/quetzalcoalt'
 r_scripts_path <- getwd()
 setwd("../../../")
 github_repo_path <- getwd()
 
-
-##VERSION 
 version <- '00'
-#feature_path <- '/rqa'
 dataset_path <- '/data/dataset'
 
-## Outcomes Data Path
-#outcomes_data_path <- paste(github_path,'/hwum-dataset/data-output', feature_path, '/v', version, sep="")
-
-## Outcomes Plot Path
-#outcomes_plot_path <- paste(github_path,"/phd-thesis/figs/results", feature_path, '/v', version,sep="")
-
-## Data Path
-#data_path <- paste(github_path,'/hwum-dataset/data-output', feature_path, '/v', version, sep="")
 data_path <- paste(github_repo_path, dataset_path, sep="")
 setwd(file.path(data_path))
 
@@ -57,14 +45,13 @@ library(ggplot2)
 library(RColorBrewer)
 
 library(devtools)
-load_all( paste(homepath, main_home_path, '/nonlinearTseries', sep='' ))
+#load_all( paste(homepath, main_home_path, '/nonlinearTseries', sep='' ))
+library(nonlinearTseries)
 source( paste(github_repo_path,'/code/rfunctions/extra_rqa.R',sep='') )
-
 
 ################################################################################
 # (2) Reading data
 file_ext <- paste('xdata_v', version, '.dt',sep='')
-#file_ext <- paste('xdata_v01', '.dt',sep='')
 data <- fread( file_ext, header=TRUE)
 
 data <- data[,.(

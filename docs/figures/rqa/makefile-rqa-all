@@ -1,0 +1,37 @@
+## Usage
+## make -f makefile-rqa-all
+
+INKSCAPE?=inkscape
+#references
+#https://www.digitalocean.com/community/tutorials/how-to-use-makefiles-to-automate-repetitive-tasks-on-an-ubuntu-vps
+
+VECTORPATH = vectorfiles
+OUTPUTPATH = output
+DENSITYDPI = 120 # convert -density $(DENSITYDPI) $@ $<
+wX=$$(( 43000/20 ))
+hX=$$(( 22000/20 ))
+
+FIGURES_SVG=$(wildcard $(VECTORPATH)/*.svg)
+FIGURES_PNG=$(subst $(VECTORPATH)/, $(OUTPUTPATH)/,$(FIGURES_SVG:.svg=.png))
+FIGURES_PDF=$(subst $(VECTORPATH)/, $(OUTPUTPATH)/,$(FIGURES_SVG:.svg=.pdf))
+
+## Pattern rule for converting SVG to PDF
+$(OUTPUTPATH)/%.pdf: $(VECTORPATH)/%.svg
+	$(INKSCAPE) --export-pdf $(@) $(<) #--export-height=500  does not work with export-pdf
+
+## Pattern rule for converting SVG to PNG and reduction of resolution
+$(OUTPUTPATH)/%.png: $(VECTORPATH)/%.svg
+	$(INKSCAPE) --export-png $(@) $(<)
+	#$(INKSCAPE) --export-png $(@) --export-width=$(wX) --export-height=$(hX) $(<)
+	convert -density $(DENSITYDPI) $@ $(OUTPUTPATH)/temp.png
+	mv $(OUTPUTPATH)/temp.png $@ 
+
+all:	$(FIGURES_PDF)
+
+viewpdf:
+	evince $(FIGURES_PDF)
+viewpng:
+	eog $(FIGURES_PNG)
+
+clean:  ## output figures
+	rm -f $(FIGURES_PDF) $(FIGURES_PNG)

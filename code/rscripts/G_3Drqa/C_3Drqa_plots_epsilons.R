@@ -24,17 +24,12 @@ start.time <- Sys.time()
 # (0) Defining paths for main_path, r_scripts_path, ..., etc.
 
 homepath <- Sys.getenv("HOME")
-main_home_path <- '/quetzalcoalt'
 r_scripts_path <- getwd()
 setwd("../../../")
 github_repo_path <- getwd()
 
 
-
-
-
 ##VERSION 
-version <- '00'
 feature_path <- '/docs/figures/rqa/src/3drqa_epsilons'
 data_path <- '/data/rqa'
 
@@ -55,31 +50,26 @@ library(plot3D)
 
 ################################################################################
 # (2) Reading data
-#
+
+## Participant 01
 #file_ext <- paste('RQAs_p01w100.dt',sep='')
-#W100 <- fread( file_ext, header=TRUE)
-#
 #file_ext <- paste('RQAs_p01w250.dt',sep='')
-#W250 <- fread( file_ext, header=TRUE)
-#
 #file_ext <- paste('RQAs_p01w500.dt',sep='')
-#W500 <- fread( file_ext, header=TRUE)
-#
 #file_ext <- paste('RQAs_p01w750.dt',sep='')
-#W750 <- fread( file_ext, header=TRUE)
-#
-#W <- rbind(W100, W250, W500, W750)
-#
 
+## Participant 02
+#file_ext <- paste('RQAs_p02w100.dt',sep='')
+#file_ext <- paste('RQAs_p02w250.dt',sep='')
 #file_ext <- paste('RQAs_p02w500.dt',sep='')
-#W <- fread( file_ext, header=TRUE)
-#
+#file_ext <- paste('RQAs_p02w750.dt',sep='')
 
-file_ext <- paste('RQAs_p03w500.dt',sep='')
+## Participant 03
+#file_ext <- paste('RQAs_p03w100.dt',sep='')
+#file_ext <- paste('RQAs_p03w250.dt',sep='')
+#file_ext <- paste('RQAs_p03w500.dt',sep='')
+file_ext <- paste('RQAs_p03w750.dt',sep='')
+
 W <- fread( file_ext, header=TRUE)
-
-
-
 ################################################################################
 ################################################################################
 ################################################################################
@@ -87,7 +77,6 @@ W <- fread( file_ext, header=TRUE)
 ## (x.x.x) RQA Metric Selection
 rqas <- c('ENTR')
 #rqas <- c('REC','DET', 'RATIO', 'ENTR')
-
 
 #########################################################
 for (rqas_k in 1:length(rqas) ) {
@@ -99,8 +88,6 @@ Wk <- W[,.(
 	get(rqask)
 	), by=. (Participant, Window, Activity, Sensor, Axis, dim, tau, eps)]
 
-
-
 #selectParticipant <- 'p01'
 #selectParticipant <- 'p02'
 selectParticipant <- 'p03'
@@ -108,20 +95,29 @@ Wk <-  Wk[ Participant %in% selectParticipant ]
 
 #selectWindow <- 'w100'
 #selectWindow <- 'w250'
-selectWindow <- 'w500'
-#selectWindow <- 'w750'
+#selectWindow <- 'w500'
+selectWindow <- 'w750'
 Wkw <-  Wk[ Window %in% selectWindow ]
 
+#### Horizontal
+#selectActivity <- 'Horizontal'; activities <- c('HN','HF'); axis <- c('sg0zmuvGyroZ', 'sg1zmuvGyroZ', 'sg2zmuvGyroZ')
 
-################################################################################
+### Vertical
+selectActivity <- 'Vertical'; activities <- c('VN','VF'); axis <- c('sg0zmuvGyroY', 'sg1zmuvGyroY', 'sg2zmuvGyroY')
+
+###############################################################################
 ################################################################################
 ################################################################################
 ################################################################################
 	## (4.2.1) Activities Selection
-	activities <- c('HN','HF')
+	
+	### Horizontal
+	#activities <- c('HN','HF')
+	
+	### Vertical
 	#activities <- c('VN','VF')
-
-
+	
+	#activities <- c('HN', 'HF', 'VN', 'VF')
 
 
 	#########################################################
@@ -163,10 +159,15 @@ Wkw <-  Wk[ Window %in% selectWindow ]
 #################################################################################
 #################################################################################
 				### (4.2.4) Axis Selection
+			
+				### Horizontal
+				#axis <- c('sg0zmuvGyroZ', 'sg1zmuvGyroZ', 'sg2zmuvGyroZ')
 
-				axis <- c('sg0zmuvGyroZ', 'sg1zmuvGyroZ', 'sg2zmuvGyroZ')
+				### Vertical
 				#axis <- c('sg0zmuvGyroY', 'sg1zmuvGyroY', 'sg2zmuvGyroY')
-
+	
+				#axis <- c('sg0zmuvGyroY', 'sg1zmuvGyroY', 'sg2zmuvGyroY', 'sg0zmuvGyroZ', 'sg1zmuvGyroZ', 'sg2zmuvGyroZ')
+				
 				####### Axis
 				for (axis_k in c(1:length(axis)  )){ #for (axis_k in c(1:length(axis))){
 				axisk<- axis[axis_k]
@@ -195,12 +196,12 @@ Wk <-  Wkaksk[ Axis %in% axisk ]
 ################################################################################
 # (5.0) Creating  and Changing to PlotPath
 
-#plots_path <- paste( outcomes_plot_path, '/', selectParticipant   ,sep='')
-if (file.exists(outcomes_plot_path)){
-    setwd(file.path(outcomes_plot_path))
+plots_path <- paste( outcomes_plot_path, '/', selectParticipant, '-', selectWindow, '-', selectActivity, sep='')
+if (file.exists(plots_path)){
+    setwd(file.path(plots_path))
 } else {
-  dir.create(outcomes_plot_path, recursive=TRUE)
-  setwd(file.path(outcomes_plot_path))
+  dir.create(plots_path, recursive=TRUE)
+  setwd(file.path(plots_path))
 }
 
 
@@ -217,14 +218,10 @@ height.calc <- image_height / image_dpi
 	
 
 
-
-
-
-
-
 zlim_max<-10
 #EPS<-c (0.1,0.2,0.5,0.7,1.0,1.2,1.5,1.7,2,3.0)
-EPS<-c (0.5)
+#EPS<-c (0.5)
+EPS<-c (0.5,1.0,1.5,2.0,2.5,3.0)
 
 
 message('Plotting different 3DRQA with different eps')
@@ -247,7 +244,7 @@ for (eps_k in 1:length(EPS) ) {
 #filenameimage <- paste(rqask, '_', trialk, '_', axisk,'_eps_', recurrence_threshold, '.png', sep='')
 #png(filenameimage,width=image_width, height=image_height, units="px", res=image_dpi, bg=image_bg)
 
-filenameimage <- paste(selectWindow, '_', rqask, '_', sensork, '_', 
+filenameimage <- paste(selectParticipant, '_', selectWindow, '_', rqask, '_', sensork, '_', 
 		activityk, '_', axisk, '_eps_', recurrence_threshold, '.png', sep='')
 png(filenameimage,width=image_width, height=image_height, units="px", res=image_dpi, bg=image_bg)
 

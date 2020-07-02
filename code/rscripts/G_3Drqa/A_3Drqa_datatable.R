@@ -23,7 +23,6 @@ start.time <- Sys.time()
 ################################################################################
 # (0) Defining paths for main_path, r_scripts_path, ..., etc.
 homepath <- Sys.getenv("HOME")
-main_home_path <- '/quetzalcoalt'
 r_scripts_path <- getwd()
 setwd("../../../")
 github_repo_path <- getwd()
@@ -36,8 +35,6 @@ dataset_path <- '/data/dataset'
 
 ## Outcomes Data Path
 outcomes_data_path <- paste(github_repo_path, feature_path,  sep="")
-### Outcomes Plot Path
-#outcomes_plot_path <- paste(github_repo_path,'/hwum-manuscript/figures/results', feature_path, '/v', version, sep="")
 ## Data Path
 data_path <- paste(github_repo_path, dataset_path, sep="")
 setwd(file.path(data_path))
@@ -70,9 +67,6 @@ data <- data[,.(
 	), by=. (Participant,Activity,Sensor,Sample,Time)]
 
 
-
-
-
 ################################################################################
 ################################################################################
 ################################################################################
@@ -84,8 +78,8 @@ W<-NULL#rqas for all windows
 ##########################
 ##### one window lenght
 
-#windowsl <- c(100)
-#windowsn <- c('w2')
+windowsl <- c(100)
+windowsn <- c('w2')
 
 #windowsl <- c(250)
 #windowsn <- c('w5')
@@ -95,7 +89,8 @@ W<-NULL#rqas for all windows
 
 #windowsl <- c(750)
 #windowsn <- c('w15')
-#
+
+
 
 
 ############################
@@ -103,10 +98,8 @@ W<-NULL#rqas for all windows
 #windowsl <- c(100,250,500,750)
 #windowsn <- c('w2', 'w5', 'w10', 'w15')
 #
-windowsl <- c(100,250,500)
-windowsn <- c('w2', 'w5', 'w10')
-
-
+#windowsl <- c(100,250,500)
+#windowsn <- c('w2', 'w5', 'w10')
 
 
 
@@ -120,7 +113,7 @@ windowsn <- c('w2', 'w5', 'w10')
 #### w15, 15-second window (750 samples) ## 100 to 850
 
 
-for ( wk in 1:(length(windowsl)) ) {
+for ( wk in 1:(length(windowsn)) ) {
 
 xdata <- data
 
@@ -202,7 +195,7 @@ wdata <- xdata[,.SD[windowframe],by=.(Participant,Activity,Sensor)];
 
 		if (number_of_participants == 1) {
 		setkey(awdata, Participant)
-		pNN <- c('p01')
+		pNN <- c('p01')  #Number of participant (e.g. p01, p02, etc)
 		pawdata <- awdata[.(
 				pNN
 				)]
