@@ -1,6 +1,3 @@
-
-
-
 # 20 participants
 
 ```

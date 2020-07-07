@@ -1,7 +1,4 @@
-
-
 # R
-
 
 ## 1. installing and dependencies R
 
@@ -21,8 +18,6 @@ R
 source(paste(getwd(),"/B_install-basic-packages.R", sep=""), echo=FALSE)
 ```
 
-
-
 ## 3. nonlinearTseries package
 
 
@@ -41,10 +36,7 @@ git clone https://github.com/mxochicale/nonlinearTseries
 
 
 
-
-
 # GNU Octave
-
 
 ## GNU Octave, version 4.0.2 [:link:](https://unix.stackexchange.com/questions/280195/how-to-install-octave-without-gui-in-ubuntu-16-0://unix.stackexchange.com/questions/280195/how-to-install-octave-without-gui-in-ubuntu-16-04)
 
@@ -63,7 +55,6 @@ sudo make install
 rm -rf octave-4.0.2
 rm octave-4.0.2.tar.gz 
 ```
-
 
 remove octave [:link:](https://askubuntu.com/questions/814054/uninstalling-octave-from-ubuntu-16-04-lts)
 ```
@@ -87,9 +78,4 @@ remove octave [:link:](https://askubuntu.com/questions/814054/uninstalling-octav
 ```
 sudo apt-get remove --auto-remove octave
 ```
-
-
-
-
-
 

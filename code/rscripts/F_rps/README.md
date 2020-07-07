@@ -1,10 +1,6 @@
-Recurrence Quantification Analysis
----
+# Recurrence Quantification Analysis
 
-
-
-
-# `source(  paste( getwd(), '/Ba_timeseries_aH.R', sep=''), echo=TRUE )`
+## `source(  paste( getwd(), '/Ba_timeseries_aH.R', sep=''), echo=TRUE )`
 
 
 
@@ -19,7 +15,7 @@ windowsn <- c('w2')
 Time difference of 9.531469 secs
 
 
-# `source(  paste( getwd(), '/Bb_timeseries_aV.R', sep=''), echo=TRUE )`
+## `source(  paste( getwd(), '/Bb_timeseries_aV.R', sep=''), echo=TRUE )`
 
 ```
 ###########################
@@ -35,13 +31,7 @@ Time difference of 7.474365 secs
 
 
 
-
-
-
-
-
-
-# `source(  paste( getwd(), '/Ca_rp_aH.R', sep=''), echo=TRUE )`
+## `source(  paste( getwd(), '/Ca_rp_aH.R', sep=''), echo=TRUE )`
 
 ```
 ###########################
@@ -49,7 +39,6 @@ Time difference of 7.474365 secs
 windowsl <- c(100)
 windowsn <- c('w2')
 ```
-
 
 
 ```
@@ -74,8 +63,6 @@ windowsn <- c('w10')
 ```
 
 
-
-
 > end.time - start.time
 Time difference of 20.71266 secs
 
@@ -84,11 +71,7 @@ Time difference of 20.71266 secs
 
 
 
-
-
-
-
-# `source(  paste( getwd(), '/Cb_rp_aV.R', sep=''), echo=TRUE )`
+## `source(  paste( getwd(), '/Cb_rp_aV.R', sep=''), echo=TRUE )`
 
 tart.time
 Time difference of 22.44884 secs
@@ -176,14 +159,7 @@ Time difference of 21.6059 secs
 
 
 
-
-
-
-
-
-
-
-# `source(  paste( getwd(), '/D_rqa.R', sep=''), echo=TRUE )`
+## `source(  paste( getwd(), '/D_rqa.R', sep=''), echo=TRUE )`
 
 
 ```
@@ -236,7 +212,7 @@ Time difference of 36.66901 secs
 
 
 
-# `> source(  paste( getwd(), '/Ea_rqa_plots_aH.R', sep=''), echo=TRUE )`
+## `> source(  paste( getwd(), '/Ea_rqa_plots_aH.R', sep=''), echo=TRUE )`
 
 ```
 #windowksecs <- c('w2')

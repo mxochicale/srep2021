@@ -1,7 +1,4 @@
 
-
-
-
 # figures output
 ~/srep2019/docs/figures/timeseries/src 
 

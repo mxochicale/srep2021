@@ -1,9 +1,5 @@
 
-# `source( paste( getwd(), '/A_dataset.R',sep='' ), echo=TRUE  )`
-
-
-
-# `source( paste( getwd(), '/BA_mean_caoH.R',sep='' ), echo=TRUE  )`
+## `source( paste( getwd(), '/BA_mean_caoH.R',sep='' ), echo=TRUE  )`
 
 
 ```
@@ -40,7 +36,7 @@ window=w15 mean minEmdDim=6
 
 
 
-# `source( paste( getwd(), '/BB_mean_caoV.R',sep='' ), echo=TRUE  )`
+## `source( paste( getwd(), '/BB_mean_caoV.R',sep='' ), echo=TRUE  )`
 
 ```
 
@@ -88,7 +84,7 @@ window=w15 mean minEmdDim=6
 
 
 
-# `> source( paste( getwd(), '/BC_mean_amiH.R',sep='' ), echo=TRUE  )`
+## `> source( paste( getwd(), '/BC_mean_amiH.R',sep='' ), echo=TRUE  )`
 
 
 ```
@@ -130,7 +126,7 @@ window=w15 total mean minDelay=10
 
 
 
-# `> source( paste( getwd(), '/BD_mean_amiV.R',sep='' ), echo=TRUE  )`
+## `> source( paste( getwd(), '/BD_mean_amiV.R',sep='' ), echo=TRUE  )`
 
 
 ```
@@ -174,10 +170,7 @@ window=w15 total mean minDelay=10
 
 
 
-# `source( paste( getwd(), '/C_rss.R',sep='' ), echo=TRUE  )`
-
-
-
+## `source( paste( getwd(), '/C_rss.R',sep='' ), echo=TRUE  )`
 
 
 caoH window=w2 mean minEmdDim=4
@@ -234,8 +227,5 @@ windowsn <- c('w15')
 dimensions <- c(6)
 delays <- c(10)
 ```
-
-
-
 
 

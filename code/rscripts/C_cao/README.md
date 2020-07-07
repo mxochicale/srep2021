@@ -1,9 +1,6 @@
-cao
----
+# cao
 
-
-
-# `> source(paste(getwd(), "/B_cao.R", sep=""), echo=TRUE)`
+## `> source(paste(getwd(), "/B_cao.R", sep=""), echo=TRUE)`
 
 
 
@@ -50,18 +47,7 @@ files at `~/srep2019/data/utde`
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#  `> source(paste(getwd(), "/CA_cao_mm_H.R", sep=""), echo=TRUE)`
+## `> source(paste(getwd(), "/CA_cao_mm_H.R", sep=""), echo=TRUE)`
 
 ```
 #acts <- 'H'
@@ -100,10 +86,7 @@ at /srep2019/data/utde
 
 
 
-
-
-# `> source(paste(getwd(), "/CB_cao_mm_V.R", sep=""), echo=TRUE)`
-
+## `> source(paste(getwd(), "/CB_cao_mm_V.R", sep=""), echo=TRUE)`
 
 comment and uncomment the following lines of code
 ```
@@ -145,15 +128,7 @@ at /srep2019/data/utde
 
 
 
-
-
-
-
-
-
-
-
-# `> source(paste(getwd(), "/EA_plotcao_avMED_H.R", sep=""), echo=TRUE)`
+## `> source(paste(getwd(), "/EA_plotcao_avMED_H.R", sep=""), echo=TRUE)`
 
 ```
 
@@ -174,19 +149,13 @@ aMED <- fread('aMED-H-w10.dt', header=TRUE)
 
 
 ```
-
-
-
 > end.time - start.time
 Time difference of 0.7096527 secs
 
 
 
 
-
-
-
-# `> source(paste(getwd(), "/EB_plotcao_avMED_V.R", sep=""), echo=TRUE)`
+## `> source(paste(getwd(), "/EB_plotcao_avMED_V.R", sep=""), echo=TRUE)`
 
 
 ```
@@ -205,12 +174,7 @@ aMED <- fread('aMED-V-w10.dt', header=TRUE)
 #windowl<-'w15'
 #aMED <- fread('aMED-V-w15.dt', header=TRUE)
 
-
-
-
 ```
-
-
 
 > end.time - start.time
 Time difference of 0.7334752 secs
@@ -234,8 +198,5 @@ Time difference of 0.7334752 secs
 
 0 directories, 8 files
 ```
-
-
-
 
 

@@ -1,17 +1,13 @@
-ami
----
+# ami
 
-
-# todo
+## todo
 
 * [ ] automatically select the window
 
 Fri 31 Aug 13:42:24 BST 2018
 
 
-
-
-# `source(paste(getwd(),"/B_ami.R", sep=""), echo=TRUE)`
+## `source(paste(getwd(),"/B_ami.R", sep=""), echo=TRUE)`
 
 ```
 ######################################
@@ -53,10 +49,7 @@ at `/home/ai/github/phd-thesis-code-data/data-outputs/utde/minimum_embedding_par
 
 
 
-
-
-
-# `source(paste(getwd(),"/CA_plotamiH.R", sep=""), echo=TRUE)`
+## `source(paste(getwd(),"/CA_plotamiH.R", sep=""), echo=TRUE)`
 
 ```
 #AMI <- fread('AMI-w2.dt', header=TRUE)
@@ -89,8 +82,7 @@ Time difference of 2.365328 secs
 ```
 
  
-
-# `source(paste(getwd(),"/CB_plotamiV.R", sep=""), echo=TRUE)`
+## `source(paste(getwd(),"/CB_plotamiV.R", sep=""), echo=TRUE)`
 
 
 ```
@@ -150,6 +142,4 @@ Time difference of 0.7130244 secs
 
 0 directories, 16 files
 ```
-
-
 

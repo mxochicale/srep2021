@@ -1,8 +1,6 @@
-r-scripts
----
+# r-scripts
 
-
-# Creating and setting up the raw data into aligned data
+## Creating and setting up the raw data into aligned data
 
 1. Generate aligned data with `/A_mscripts/A_rawData_TO_TimeAlignedDataForSeparateActivities15_p01_to_p22_octave_linux.m`
 which creates this output path:
@@ -11,7 +9,7 @@ which creates this output path:
 
 
 
-# Generating data.table files
+## Generating data.table files
 
 ```
 cd .../code_raw2aligned/B_rscripts-hri
