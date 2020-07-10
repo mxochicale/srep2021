@@ -23,7 +23,6 @@ start.time <- Sys.time()
 ################################################################################
 # (0) Defining paths for main_path, r_scripts_path, ..., etc.
 
-homepath <- Sys.getenv("HOME")
 r_scripts_path <- getwd()
 setwd("../../../")
 github_repo_path <- getwd()

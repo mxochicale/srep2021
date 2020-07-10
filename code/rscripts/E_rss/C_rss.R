@@ -37,7 +37,8 @@ r_scripts_path <- getwd()
 
 setwd("../../../")
 github_repo_path <- getwd()
-
+libfun_path <- '/code/libraries_functions'
+rfunctions_ollin_cencah_R <- '/rfunctions/ollin_cencah.R'
 
 ##VERSION 
 version <- '00'
@@ -57,8 +58,7 @@ setwd(file.path(data_path))
 # (1) Loading Functions and Libraries and Setting up digits
 library(data.table) # for manipulating data
 library(signal)# for butterworth filter and sgolay
-source( paste(github_repo_path,'/code/rfunctions/ollin_cencah.R',sep='') )
-
+source( paste(github_repo_path, libfun_path, rfunctions_ollin_cencah_R, sep='') )
 
 
 ################################################################################

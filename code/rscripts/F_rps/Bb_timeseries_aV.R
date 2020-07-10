@@ -37,6 +37,9 @@ r_scripts_path <- getwd()
 
 setwd("../../../")
 github_repo_path <- getwd()
+libfun_path <- '/code/libraries_functions'
+rfunctions_extra_rqa_R <- '/rfunctions/extra_rqa.R'
+
 
 
 ##VERSION 
@@ -59,7 +62,7 @@ setwd(file.path(data_path))
 # (1) Loading Functions and Libraries and Setting up digits
 library(data.table) # for manipulating data
 library(signal)# for butterworth filter and sgolay
-source( paste(github_repo_path,'/code/rfunctions/extra_rqa.R',sep='') )
+source( paste(github_repo_path, libfun_path, rfunctions_extra_rqa_R , sep='') )
 
 ################################################################################
 # (2) Reading data

@@ -38,13 +38,9 @@ start.time <- Sys.time()
 # (0) Defining paths for main_path, r_scripts_path, ..., etc.
 r_scripts_path <- getwd()
 
-homepath <- Sys.getenv("HOME")
-#message( 'homepath: ',   homepath )
-main_home_path <- '/quetzalcoalt'
-
 setwd("../../../")
 github_repo_path <- getwd()
-
+libfun_path <- '/code/libraries_functions'
 
 ##VERSION 
 version <- '00'
@@ -63,8 +59,7 @@ setwd(file.path(data_path))
 library(data.table) # for manipulating data
 
 library(devtools)
-load_all( paste(homepath, main_home_path, '/nonlinearTseries', sep='' ))
-
+load_all(paste(github_repo_path, libfun_path, '/nonlinearTseries', sep=""))
 
 ################################################################################
 # (2) Reading data

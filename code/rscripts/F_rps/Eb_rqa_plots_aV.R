@@ -40,6 +40,9 @@ r_scripts_path <- getwd()
 
 setwd("../../../")
 github_repo_path <- getwd()
+libfun_path <- '/code/libraries_functions'
+rfunctions_extra_rqa_R <- '/rfunctions/extra_rqa.R'
+
 
 
 
@@ -69,8 +72,9 @@ library(ggplot2)
 library(RColorBrewer)
 
 library(devtools)
-load_all( paste(homepath, main_home_path, '/nonlinearTseries', sep='' ))
-source( paste(github_repo_path,'/code/rfunctions/extra_rqa.R',sep='') )
+load_all(paste(github_repo_path, libfun_path, '/nonlinearTseries', sep=""))
+source( paste(github_repo_path, libfun_path, rfunctions_extra_rqa_R , sep='') )
+
 
 
 

@@ -290,7 +290,7 @@ xpa <- xdatap
 ##############################################################################
 ###############################################################################
 # (5) CAO's algorithm
-source(paste(github_repo_path,'/code/rfunctions/embedding_parameters/withCao1997/cao97_functions.R', sep=''))
+source(paste(github_repo_path,'/code/libraries_functions/rfunctions/embedding_parameters/withCao1997/cao97_functions.R', sep=''))
 
 # (5.1) Parameter selections
 delta_ee<-0.1
