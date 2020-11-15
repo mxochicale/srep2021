@@ -1,7 +1,4 @@
-# code
-
-
-## Path organisation
+# Path organisation of code  
 ```
 ~/srep2020/code$ tree -d
 .
@@ -118,5 +115,4 @@
     └── G_3Drqa
 
 111 directories
-
 ```

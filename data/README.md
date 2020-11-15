@@ -1,6 +1,4 @@
-# data
-
-## File organisation
+# File organisation of data  
 ```
 ~/srep2019/data$ tree -s
 .
