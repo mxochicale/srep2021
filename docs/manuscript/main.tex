@@ -548,33 +548,9 @@ whenever $X(i)$ is sufficiently close to $X(j)$:
 where $\quad i,j=1,\dots,N$, $\epsilon$ is a threshold distance, 
 $|| \cdotp ||$ a norm, and $\Theta(\cdotp)$ is the Heaviside 
 function (i.e. $\Theta(x)=0$, if $x<0$, and $\Theta(x)=1$ otherwise) 
-(Fig~\ref{fig:mrp}) \cite{eckmann1987, marwan2007,marwan2015}.
+(Fig~\ref{fig:rps}(A,B)) \cite{eckmann1987, marwan2007,marwan2015}.
 RP is also characterised with a line of identity (LOI) which is a  
 diagonal line due to $ R_{i,j}=1 (i,j=1,\dots,N)$. 
-%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/methods/rp/pdf/rp}
-    \caption{
-	{\bf Recurrence Plots.} 
-	(A) State space of the Lorenz system with controlling parameters 
-	($\rho=28, \sigma=10, \beta=8/3$). 
-	A point, $j$, in trajectory $X()$ which falls into the neighborhood 
-	(black circle) of a given point at $i$ is a recurrent point and is 
-	represented as a black dot in the recurrence plot at location 
-	$(i, j)$ or white otherwise.
-	(B) Recurrence plot using the 
-	three components of the Lorenz system and the RP with no embeddings 
-	and threshold $\epsilon=5$.
-	This figure is adapted from \cite{marwan2015}.
-	Code and data to reproduce the figure is available in \cite{srep2020}.
-	}
-    \label{fig:mrp}
-\end{figure}
-%%---------------------------------(FIGURE)-------------------------------------
-
-
-
 
 
 %*******************************************************************************
@@ -585,16 +561,16 @@ Pattern formations in the RPs can be designated either
 as topology for large-scale patterns or texture for small-scale patterns.
 In the case of topology, the following pattern formations are commonly presented:
 (i) homogeneous where uniform recurrence points are spread in the RP e.g., 
-uniformly distributed noise (Fig~\ref{fig:rp2}A), 
+uniformly distributed noise (Fig~\ref{fig:rps}C), 
 (ii) periodic and quasi-periodic systems where diagonal lines and 
 checkerboard structures represent oscillating systems, e.g., sinusoidal 
-signals (Fig~\ref{fig:rp2}B), 
+signals (Fig~\ref{fig:rps}D), 
 (iii) drift where paling or darkening recurrence points away from 
 the LOI is caused by drifting systems, 
-e.g., logistic map (Fig~\ref{fig:rp2}C), and
+e.g., logistic map (Fig~\ref{fig:rps}E), and
 (iv) disrupted where recurrence points are presented white areas or 
 bands that indicate abrupt changes in the dynamics, e.g. Brownian motion 
-(Fig~\ref{fig:rp2}D) \cite{eckmann1987, marwan2015}.
+(Fig~\ref{fig:rps}F) \cite{eckmann1987, marwan2015}.
 Texture patterns in RPs can be categorised as:
 (i) single or isolated recurrence points that represent rare occurring states, 
 and do not persist for any time or fluctuate heavily,
@@ -606,25 +582,6 @@ lines represent a time length where a state does not change or change very
 slowly and these patterns formation represent discontinuities in the signal, 
 and (iv) dots clustering to inscribe rectangular regions which are related 
 to laminar states or singularities \cite{marwan2015}.
-%%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/methods/rpsp/pdf/rpsp}
-    \caption{
-	{\bf Patterns in Recurrence Plots.} 
-	Time-series with its respective recurrence plot for:
-	(A) uniformly distributed noise,
-	(B) super-positionet harmonic oscillation 
-	($sin( \frac{1}{5}*t) * sin( \frac{5}{100}*t) $),
-	(C) drift logistic map ($x_{i+1} = 4 x_i (1- x_i) $) corrupted 
-	with a linearly increase term ($0.01*i$), and
-	(D) disrupted brownian motion  ($x_{i+1} = x_i + 2*rnorm(1) $).
-	This figure is adapted from \cite{marwan2015}.
-	Code and data to reproduce the figure is available in \cite{srep2020}.
-	}
-    \label{fig:rp2}
-\end{figure}
-%%---------------------------------(FIGURE)-------------------------------------
 
 Although, each of the previous pattern descriptions of the structures in the 
 RP offer an idea of the characteristics of dynamical systems, 
@@ -633,6 +590,36 @@ as these require the interpretation of a particular researcher(s).
 Because of that, recurrence quantification analyis (RQA) offer objective 
 methodologies to quantify such visual characteristics of previous 
 recurrent pattern structures in the RP \cite{zbilut1992}.
+
+%---------------------------------(FIGURE)-------------------------------------
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/methods/rps/versions/drawing-v00.pdf}
+    \caption{
+	{\bf Recurrence Plots and its patterns.} 
+	(A) State space of the Lorenz system with controlling parameters 
+	($\rho=28, \sigma=10, \beta=8/3$) where the point, $j$, in trajectory $X()$ which falls into the neighborhood 
+	(black circle) of a given point at $i$ is a recurrent point and is 
+	represented as a black dot in the recurrence plot at location 
+	$(i, j)$ or white otherwise.
+	(B) Recurrence plot using the 
+	three components of the Lorenz system and the RP with no embeddings 
+	and threshold $\epsilon=5$.
+	Time-series with its respective recurrence plot for:
+	(C) uniformly distributed noise,
+	(D) super-positionet harmonic oscillation 
+	($sin( \frac{1}{5}*t) * sin( \frac{5}{100}*t) $),
+	(E) drift logistic map ($x_{i+1} = 4 x_i (1- x_i) $) corrupted 
+	with a linearly increase term ($0.01*i$), and
+	(F) disrupted brownian motion  ($x_{i+1} = x_i + 2*rnorm(1) $).
+	This figure is adapted from \cite{marwan2015}.
+	Code and data to reproduce the figure is available in \cite{srep2020}.
+	}
+    \label{fig:rps}
+\end{figure}
+%%---------------------------------(FIGURE)-------------------------------------
+
+
 
 %*******************************************************************************
 \subsection*{Recurrence Quantifications Analysis (RQA)}
