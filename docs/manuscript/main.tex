@@ -389,43 +389,28 @@ not constant for all $m$ (e.g. $E_2(m) \neq 1$).
 
 As an example of the use of $E_1(m)$ and $E_2(m)$ values, we consider two time 
 series: the solution for the $x$ variable of the Lorenz system 
-(Fig~\ref{fig:e1e2}E), and a Gaussian noise time series with zero mean 
-and a variance of one (Fig~\ref{fig:e1e2}F).
+(Fig~\ref{fig:caoami}A), and a Gaussian noise time series with zero mean 
+and a variance of one (Fig~\ref{fig:caoami}B).
 We then compute $E_1(m)$ and $E_2(m)$ values for each time series.
 The $E_1(m)$ values for the chaotic time series appear to be constant
 after the dimension is equal to six.
 The determination of six is given that any value of $m$ can be used as they 
-are within the threshold of $1\pm0.05$ (Fig~\ref{fig:e1e2}A).
+are within the threshold of $1\pm0.05$ (Fig~\ref{fig:caoami}C).
 $E_2(m)$ values, for chaotic time series, are different to one 
-(Fig~\ref{fig:e1e2}C), for which, it can be concluded that for the 
+(Fig~\ref{fig:caoami}E), for which, it can be concluded that for the 
 chaotic time series the minimum embedding dimension the time series 
 comes from a deterministic signal. With regard to the noise time series,  
 $E_1(m)$ values appeared to be constant when $m$ is close to thirteen, 
-which is defined by the threshold of $1\pm0.05$ (Fig~\ref{fig:e1e2}B).
+which is defined by the threshold of $1\pm0.05$ (Fig~\ref{fig:caoami}D).
 $E_1(m)$ values then indicate the minimum embedding dimension of the 
 noisy time series is thirteen, however all of the $E_2(m)$ values are 
-approximately equal to one (Figure~\ref{fig:e1e2}D) for which it can be 
+approximately equal to one (Figure~\ref{fig:caoami}F) for which it can be 
 concluded that noise time series is a stochastic signal.
-%%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/methods/cao/pdf/cao}
-    \caption{
-	{\bf Minimum dimension embedding values with Cao's method.} 
-	(A, B) $E_1 (m)$ values and (C, D) $E_2(m)$ values 
-	with variations of $\tau$ values from one to twenty
-	for (E) chaotic and (F) random time series.
-	Code and data to reproduce the figure is available in \cite{srep2020}.
-        }
-    \label{fig:e1e2}
-\end{figure}
-%%---------------------------------(FIGURE)-------------------------------------
-
 It is important to note that for this work not only $E_1(m)$ and $E_2(m)$ are 
 computed but also a variation of $\tau$ from 1 to 20 is presented. 
 The purpose of such variation for $\tau$ is to show its independence with
 regard to $E_1(m)$ and $E_2(m)$ values as $\tau$ is increasing 
-(Fig~\ref{fig:e1e2}A,B,C, and D). 
+(Fig~\ref{fig:caoami}C,D,E and F). 
 However, one negative of the Cao's algorithm \cite{Cao1997} is the definition of 
 a new threshold where $m$ values appear to be constant in $E_1 (m)$.
 In the case of the given examples and reported results, we defined such 
@@ -483,26 +468,13 @@ where the redundancy is the least" \cite{kantz2003}.
 For example, we compute the AMI for two time series:
 A) the $x$ solution of the Lorenz system, and
 B) a noise time series using a normal distribution with mean zero and 
-standard deviation equal to one. From Fig~\ref{fig:amis}, it can then be 
+standard deviation equal to one. From Fig~\ref{fig:caoami}(G, H), it can then be 
 concluded that the amount of knowledge for any noise time series is zero 
 for which the first minimum embedding parameter is $\tau_0=1$. 
 On the contrary, the first minimum of the AMI for the chaotic time series 
 is $\tau_0=17$ which is the value that maximize the independence 
 between $x(n)$ and $x(n+\tau)$ in the reconstructed state space 
 \cite{bradley2015}.
-%%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/methods/ami/pdf/ami}
-    \caption{
-	{\bf Minimum delay embedding values with AMI's method.} 
-    	(A, B) AMI values where its first minimum value in the curve
-	is the minimum time delay embedding ($\tau_0$), 
-	for (C) a chaotic and (D) noise time series.
-	Code and data to reproduce the figure is available in \cite{srep2020}.
-        }
-    \label{fig:amis}
-\end{figure}
 %%---------------------------------(FIGURE)-------------------------------------
 Similarly as Cao's algorithm negatives, AMI's algorithm is not an
 exception for negatives, which are worthwhile to mention for further 
@@ -513,9 +485,23 @@ is the minimum delay embedding parameter \cite{kantz2003} and
 with the use of histograms which depends on a heuristic choice of number of bins
 for which AMI depends on partitioning \cite{garcia2005e71}.
 
-
-
-
+%%---------------------------------(FIGURE)-------------------------------------
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/methods/caoami/versions/drawing-v00.pdf}
+    \caption{
+	{\bf Minimum delay embedding values with AMI's method and minimum dimension embedding values with Cao's method.} 
+	(A) chaotic and (B) random time series.
+	(C, D) $E_1 (m)$ values and (E, F) $E_2(m)$ values 
+	with variations of $\tau$ values from one to twenty
+	for chaotic and random time series.
+	(G, H) AMI values where its first minimum value in the curve
+	is the minimum time delay embedding ($\tau_0$).
+	Code and data to reproduce the figure is available in \cite{srep2020}.
+        }
+    \label{fig:caoami}
+\end{figure}
+%%---------------------------------(FIGURE)-------------------------------------
 
 
 %*******************************************************************************
