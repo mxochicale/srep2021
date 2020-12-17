@@ -1,7 +1,4 @@
-Scientific Reports
----
-
-#SCOPE
+# Scientific Reports
 
 ## Aims & scope
 Scientific Reports publishes original research in all areas of the natural 
@@ -35,9 +32,6 @@ Scientific Reports endeavours to make first decisions on manuscripts within
 45 days. After acceptance, papers are immediately processed, 
 and published on a daily basis.
 
-
+## References 
 https://www.nature.com/srep/about/aims
-
-
-
 
