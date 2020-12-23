@@ -1,5 +1,4 @@
 # Path organisation of docs
-
 ```
 ~/srep2020/docs$ tree -d
 .
@@ -163,23 +162,25 @@
 │   │   ├── cao
 │   │   │   ├── pdf
 │   │   │   └── vector
-│   │   ├── rp
-│   │   │   ├── pdf
-│   │   │   └── vector
-│   │   ├── rpsp
-│   │   │   ├── pdf
-│   │   │   └── vector
+│   │   ├── caoami
+│   │   │   ├── references
+│   │   │   ├── vectors
+│   │   │   └── versions
+│   │   ├── rps
+│   │   │   ├── references
+│   │   │   ├── vectors
+│   │   │   └── versions
 │   │   └── rss
 │   │       ├── pdf
 │   │       └── vector
 │   ├── rps
-│   │   ├── pdf
-│   │   ├── src
+│   │   ├── references
 │   │   │   ├── rp_plots
 │   │   │   │   ├── H
 │   │   │   │   └── V
 │   │   │   └── timeseries_plots
-│   │   └── vector
+│   │   ├── vectors
+│   │   └── versions
 │   ├── rqa
 │   │   ├── output
 │   │   │   └── epsilons
@@ -215,10 +216,10 @@
 │   │   └── vectorfiles
 │   │       └── epsilons
 │   ├── rss
-│   │   ├── pdf
-│   │   ├── src
+│   │   ├── references
 │   │   │   └── w10-dim006tau008
-│   │   └── vector
+│   │   ├── vectors
+│   │   └── versions
 │   └── timeseries
 │       ├── pdf
 │       ├── src
@@ -281,11 +282,14 @@
 ├── submission
 │   ├── arxiv
 │   │   ├── v01
-│   │   └── v02
+│   │   ├── v02
+│   │   └── v03
 │   └── srep
+│       ├── checklist
 │       └── coverletter
+│           └── letter-tex
 └── supplementary-information
     └── report
 
-283 directories
+288 directories
 ```

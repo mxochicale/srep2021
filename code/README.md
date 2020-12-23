@@ -1,6 +1,6 @@
 # Path organisation of code  
 ```
-~/srep2020/code$ tree -d
+~/Desktop/srep2020/code$ tree -d
 .
 ├── anthropometrics
 │   ├── data
