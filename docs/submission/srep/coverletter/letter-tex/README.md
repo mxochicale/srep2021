@@ -14,6 +14,8 @@ about the work described in your manuscript.
 ## How to write a cover letter
 * https://www.aje.com/en/arc/writing-cover-letter/
 * https://www.researchgate.net/post/How-important-is-the-cover-letter-when-submitting-an-article-to-a-journal
+* http://blogs.nature.com/methagora/2013/09/how-to-write-a-cover-letter.html
+
 
 ## Latex Templates
 https://www.latextemplates.com/template/plain-cover-letter
