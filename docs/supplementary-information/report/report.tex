@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[margin=15mm]{geometry}
 \usepackage{graphicx}
+\usepackage{url}
 \graphicspath{{../../}} %%%goes to the path: docs/
 
 \title{
@@ -13,17 +14,43 @@ Supplementary Material
 \maketitle
 
 \begin{abstract}
-Section 1 shows surface plots of 3D RQA ENTR values for 3 participants (p01, p02 and p03).
-Datasets are for 
-(a) window size of 100, 250, 500 and 750 samples (w100, w250, w500, w750);
-(b) smoothnes: sg0, sg1 and sg2;
-(c) movement: Horizontal Normal (HN), Horizontal Faster (HF), Vertical Normal (VN) and Vertical Faster (VF); and 
-(d) sensors: Sensor attached to Human (HS01), sensor attached to Robot (RS01).
+Section 1 describes datasets and section 2 shows surface plots of 3D RQA ENTR values for 3 participants (p01, p02 and p03).
 \end{abstract}
 
 \tableofcontents
 %\newpage
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Datasets}
+Datasets are for 
+(a) window size of 100, 250, 500 and 750 samples (w100, w250, w500, w750);
+(b) smoothness: sg0, sg1 and sg2;
+(c) movement: Horizontal Normal (HN), Horizontal Faster (HF), Vertical Normal (VN) and Vertical Faster (VF); and 
+(d) sensors: Sensor attached to Human (HS01), sensor attached to Robot (RS01).
+
+The location of the dataset is shown below with the first two lines of xdatav00.dt denoting labels.
+\begin{verbatim}
+~/srep2020/data/dataset$ tree --si
+[ 46M]  xdata_v00.dt
+.
+.
+.
+"Participant" "Activity" "Sensor" "Sample" "Time" 
+"sg0zmuvGyroY" "sg1zmuvGyroY" "sg2zmuvGyroY" 
+"sg0zmuvGyroZ" "sg1zmuvGyroZ" "sg2zmuvGyroZ"
+...
+"p01" "HN" "HS01" 1 0 
+0.0110396263359954 0.00606430191548277 0.0385586376765087 
+0.00467559072085554 0.00509907428630649 0.168927517477539
+...
+\end{verbatim}
+
+%├── [4.1k]  dataset
+%│   └── [ 46M]  xdata_v00.dt
+%.
+%.
+%.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{3D RQA ENTR values}
@@ -34,20 +61,19 @@ $HOME/srep2020/code/rscripts/G_3Drqa
 `> source(  paste( getwd(), '/C_3Drqa_plots_epsilons.R', sep=''), echo=TRUE )`
 
 ## Data
-$HOME/srep2019/data/rqa$ tree -s 
+$HOME/srep2020/data/rqa$ tree -s 
 
 ## Figures
 $HOME/srep2020/docs/figures/rqa/src/3drqa_epsilons$ tree -s
 \end{verbatim}
 
-Datasets for NN participants where NN is 01, 02 and 03 are:
+For the following plots, datasets for NN participants where NN is 01, 02 and 03 are:
 \begin{verbatim}
 RQAs_pNNw100.dt
 RQAs_pNNw250.dt
 RQAs_pNNw500.dt
 RQAs_pNNw750.dt
 \end{verbatim}
-
 
 
 \subsection{Participant 01}
