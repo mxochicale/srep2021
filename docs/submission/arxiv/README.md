@@ -1,4 +1,4 @@
-# arxiv
+# arXiv submission process
 
 ## preparing files to submit to arxiv 
 1. amenments for "main-arxiv.tex"
@@ -46,14 +46,21 @@ rm -f *.aux *.blg *.log *.out main-arxiv.pdf
 ```
 
 4. compress it as zip and upload it
-
 ```
 zip -r v03.zip v03/
 ```
 
+5. upload zip file to arxiv and delete zip file.
+* Click on replace icon 
+* Add files/choose zip and updload/
+* Continue process files
+* Preview your PDF and 
 
-## references
+6. delate zip file
+```
+rm -rf *.zip
+```
+
+## References
 * [:link:](https://tex.stackexchange.com/questions/329198/how-to-obtain-and-use-the-bbl-file-in-my-tex-document-for-arxiv-submission)
-
 * [:link:](https://tex.stackexchange.com/questions/328161/problems-compiling-paper-on-arxiv)
-
