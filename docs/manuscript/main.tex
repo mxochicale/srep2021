@@ -238,7 +238,7 @@ Fig~\ref{fig:ssr} illustrates the state space reconstruction.
 %%---------------------------------(FIGURE)-------------------------------------
 \begin{figure}[ht]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/methods/rss/pdf/rss}
+\includegraphics[width=1.0\textwidth]{figures/fig01/versions/drawing-v00}
     \caption{
 	{\bf State space reconstruction methodology.}
 	State space reconstruction is based on $x(t)=h[s(t)]= h[f^t [s(0)]]$
@@ -259,14 +259,36 @@ Fig~\ref{fig:ssr} illustrates the state space reconstruction.
 	where $\Phi$ is the delay reconstruction map and 
 	$\Psi$ is the coordinate transformation map.
 	This figure is adapted from 
-   	\cite{Quintana-Duque2012, casdagli1991, uzal2011}.
+   	\cite{Quintana-Duque2012, casdagli1991, uzal2011}.	
+	{\bf Minimum delay embedding values with AMI's method and minimum dimension embedding values with Cao's method.} 
+	(A) chaotic and (B) random time series.
+	(C, D) $E_1 (m)$ values and (E, F) $E_2(m)$ values 
+	with variations of $\tau$ values from one to twenty
+	for chaotic and random time series.
+	(G, H) AMI values where its first minimum value in the curve
+	is the minimum time delay embedding ($\tau_0$).
+	{\bf Recurrence Plots and its patterns.} 
+	(A) State space of the Lorenz system with controlling parameters 
+	($\rho=28, \sigma=10, \beta=8/3$) where the point, $j$, in trajectory $X()$ which falls into the neighborhood 
+	(black circle) of a given point at $i$ is a recurrent point and is 
+	represented as a black dot in the recurrence plot at location 
+	$(i, j)$ or white otherwise.
+	(B) Recurrence plot using the 
+	three components of the Lorenz system and the RP with no embeddings 
+	and threshold $\epsilon=5$.
+	Time-series with its respective recurrence plot for:
+	(C) uniformly distributed noise,
+	(D) super-positionet harmonic oscillation 
+	($sin( \frac{1}{5}*t) * sin( \frac{5}{100}*t) $),
+	(E) drift logistic map ($x_{i+1} = 4 x_i (1- x_i) $) corrupted 
+	with a linearly increase term ($0.01*i$), and
+	(F) disrupted brownian motion  ($x_{i+1} = x_i + 2*rnorm(1) $).
+	This figure is adapted from \cite{marwan2015}.
 	Code and data to reproduce the figure is available in \cite{srep2020}.
     }
     \label{fig:ssr}
 \end{figure}
 %%---------------------------------(FIGURE)-------------------------------------
-
-
 
 \subsection*{Uniform Time-Delay Embedding (UTDE)}\label{sec:utimedelayembedding}
 Frank et al. and Sama et al. refer to the state space reconstruction
@@ -482,22 +504,22 @@ is the minimum delay embedding parameter \cite{kantz2003} and
 with the use of histograms which depends on a heuristic choice of number of bins
 for which AMI depends on partitioning \cite{garcia2005e71}.
 
-%%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/methods/caoami/versions/drawing-v00.pdf}
-    \caption{
-	{\bf Minimum delay embedding values with AMI's method and minimum dimension embedding values with Cao's method.} 
-	(A) chaotic and (B) random time series.
-	(C, D) $E_1 (m)$ values and (E, F) $E_2(m)$ values 
-	with variations of $\tau$ values from one to twenty
-	for chaotic and random time series.
-	(G, H) AMI values where its first minimum value in the curve
-	is the minimum time delay embedding ($\tau_0$).
-	Code and data to reproduce the figure is available in \cite{srep2020}.
-        }
-    \label{fig:caoami}
-\end{figure}
+%%%---------------------------------(FIGURE)-------------------------------------
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=1.0\textwidth]{figures/methods/caoami/versions/drawing-v00.pdf}
+%    \caption{
+%	{\bf Minimum delay embedding values with AMI's method and minimum dimension embedding values with Cao's method.} 
+%	(A) chaotic and (B) random time series.
+%	(C, D) $E_1 (m)$ values and (E, F) $E_2(m)$ values 
+%	with variations of $\tau$ values from one to twenty
+%	for chaotic and random time series.
+%	(G, H) AMI values where its first minimum value in the curve
+%	is the minimum time delay embedding ($\tau_0$).
+%	Code and data to reproduce the figure is available in \cite{srep2020}.
+%        }
+%    \label{fig:caoami}
+%\end{figure}
 %%---------------------------------(FIGURE)-------------------------------------
 
 
@@ -588,33 +610,33 @@ Because of that, recurrence quantification analyis (RQA) offer objective
 methodologies to quantify such visual characteristics of previous 
 recurrent pattern structures in the RP \cite{zbilut1992}.
 
-%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/methods/rps/versions/drawing-v00.pdf}
-    \caption{
-	{\bf Recurrence Plots and its patterns.} 
-	(A) State space of the Lorenz system with controlling parameters 
-	($\rho=28, \sigma=10, \beta=8/3$) where the point, $j$, in trajectory $X()$ which falls into the neighborhood 
-	(black circle) of a given point at $i$ is a recurrent point and is 
-	represented as a black dot in the recurrence plot at location 
-	$(i, j)$ or white otherwise.
-	(B) Recurrence plot using the 
-	three components of the Lorenz system and the RP with no embeddings 
-	and threshold $\epsilon=5$.
-	Time-series with its respective recurrence plot for:
-	(C) uniformly distributed noise,
-	(D) super-positionet harmonic oscillation 
-	($sin( \frac{1}{5}*t) * sin( \frac{5}{100}*t) $),
-	(E) drift logistic map ($x_{i+1} = 4 x_i (1- x_i) $) corrupted 
-	with a linearly increase term ($0.01*i$), and
-	(F) disrupted brownian motion  ($x_{i+1} = x_i + 2*rnorm(1) $).
-	This figure is adapted from \cite{marwan2015}.
-	Code and data to reproduce the figure is available in \cite{srep2020}.
-	}
-    \label{fig:rps}
-\end{figure}
 %%---------------------------------(FIGURE)-------------------------------------
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=1.0\textwidth]{figures/methods/rps/versions/drawing-v00.pdf}
+%    \caption{
+%	{\bf Recurrence Plots and its patterns.} 
+%	(A) State space of the Lorenz system with controlling parameters 
+%	($\rho=28, \sigma=10, \beta=8/3$) where the point, $j$, in trajectory $X()$ which falls into the neighborhood 
+%	(black circle) of a given point at $i$ is a recurrent point and is 
+%	represented as a black dot in the recurrence plot at location 
+%	$(i, j)$ or white otherwise.
+%	(B) Recurrence plot using the 
+%	three components of the Lorenz system and the RP with no embeddings 
+%	and threshold $\epsilon=5$.
+%	Time-series with its respective recurrence plot for:
+%	(C) uniformly distributed noise,
+%	(D) super-positionet harmonic oscillation 
+%	($sin( \frac{1}{5}*t) * sin( \frac{5}{100}*t) $),
+%	(E) drift logistic map ($x_{i+1} = 4 x_i (1- x_i) $) corrupted 
+%	with a linearly increase term ($0.01*i$), and
+%	(F) disrupted brownian motion  ($x_{i+1} = x_i + 2*rnorm(1) $).
+%	This figure is adapted from \cite{marwan2015}.
+%	Code and data to reproduce the figure is available in \cite{srep2020}.
+%	}
+%    \label{fig:rps}
+%\end{figure}
+%%%---------------------------------(FIGURE)-------------------------------------
 
 
 
