@@ -1181,20 +1181,27 @@ and an recurrence threshold of $\epsilon=1$.
 As our interest is for dynamical transitions, 
 there is little importance on the selection of $\epsilon$ which in this case
 is 1. 
-Recurrence Plots (RP) were computed for horizontal (figures~\ref{fig:rpsr}(A)) and 
-vertical (figures~\ref{fig:rpsr}(B)) arm movements.
+Recurrence Plots (RP) were computed for horizontal (figures~\ref{fig05}(A)) and
+vertical (figures~\ref{fig05}(B)) arm movements.
 %%---------------------------------(FIGURE)-------------------------------------
 \begin{figure}[ht]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/rps/versions/drawing-v00.pdf}
+\includegraphics[width=1.0\textwidth]{figures/fig05/versions/drawing-v00}
 \caption{
 	{\bf RPs for horizontal (A) and vertical (B) arm movements.}	
 	Recurrence plots were computed with 
 	embedding parameters 
 	$\overline{m}_0=6$, $\overline{\tau}_0=8$, and $\epsilon=1$.
+	{\bf Box plots for RQA metrics (C).}
+	RQA metrics for (C.1) REC, (C.2) DET, (C.3) RATIO, and (C.4) ENTR of
+	20 participants performing HN, HF, VN and VF movements
+	with sensors HS01, RS01 and three smoothed-normalised
+	time series (sg0, sg1 and sg2).
+	RQA values were computed with
+	$\overline{m}_0=6$, $\overline{\tau}_0=8$, and $\epsilon=1$.
 	Code and data to reproduce the figure is available in \cite{srep2021}.
         }
-    \label{fig:rpsr}
+    \label{fig05}
 \end{figure}
 %%---------------------------------(FIGURE)------------------------------------
 
@@ -1205,7 +1212,7 @@ percentage determinism, DET, representing the predictability of the RP;
 ratio of DET / REC, RATIO; Shannon entropy, ENTR) 
 were computed using the same parameters as for RP.
 %\subsubsection*{REC values}
-Figure~\ref{fig:RQABP}(A) presents box plots of REC values, 
+Figure~\ref{fig05}(C.1) presents box plots of REC values,
 for HS01, are more spread for Slow (i.e., 5 seconds per movement) movements 
 in Horizontal (HS) or Vertical (VS) than for Fast (i.e., 2 seconds per movement).  
 This suggests greater variation between participants for the Slow movements.  
@@ -1214,35 +1221,35 @@ For RS01, there is little variation between Slow and Fast movement
 In terms of smoothness, there seems little effect of HS01 but RS01 values 
 do show affects of smoothness (see the incremental changes of mean values (rhombus)).
 %\subsubsection*{DET values}
-Figure \ref{fig:RQABP}(B) presents DET values and shows 
+Figure \ref{fig05}(C.2) presents DET values and shows
 little difference for type of movement or performer.  
 However, DET values are affected by changes in smoothness of the signal, 
 particularly for Fast movement.
 %\subsubsection*{RATIO values}
-Figure \ref{fig:RQABP}(C) presents the ratio of DET / REC. 
+Figure \ref{fig05}(C.3) presents the ratio of DET / REC.
 These values, for the human performer, vary less for HN than for HF movement.  
 Additionally, smoothness leads to a decrease in mean values for Fast movements.
 %\subsubsection*{ENTR values}
-Figure \ref{fig:RQABP}(D) shows ENTR values are higher for the human 
+Figure \ref{fig05}(C.4) shows ENTR values are higher for the human
 performer than the robot, and vary with the smoothness of the time-series.
-%%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}
-\centering
-\includegraphics[width=1.0\textwidth]{figures/rqa/output/rqa-bp}
-    \caption
-	[Box plots for RQA values]{
-	{\bf Box plots for RQA metrics.}
-	RQA metrics for (A) REC, (B) DET, (C) RATIO, and (D) ENTR of 
-	20 participants performing HN, HF, VN and VF movements
-	with sensors HS01, RS01 and three smoothed-normalised  
-	time series (sg0, sg1 and sg2).
-	RQA values were computed with 
-	$\overline{m}_0=6$, $\overline{\tau}_0=8$, and $\epsilon=1$. 
-	Code and data to reproduce the figure is available in \cite{srep2021}.
-        }
-    \label{fig:RQABP}
-\end{figure}
-%%---------------------------------(FIGURE)------------------------------------
+%%%---------------------------------(FIGURE)-------------------------------------
+%\begin{figure}
+%\centering
+%\includegraphics[width=1.0\textwidth]{figures/rqa/output/rqa-bp}
+%    \caption
+%	[Box plots for RQA values]{
+%	{\bf Box plots for RQA metrics.}
+%	RQA metrics for (A) REC, (B) DET, (C) RATIO, and (D) ENTR of
+%	20 participants performing HN, HF, VN and VF movements
+%	with sensors HS01, RS01 and three smoothed-normalised
+%	time series (sg0, sg1 and sg2).
+%	RQA values were computed with
+%	$\overline{m}_0=6$, $\overline{\tau}_0=8$, and $\epsilon=1$.
+%	Code and data to reproduce the figure is available in \cite{srep2021}.
+%       }
+%    \label{fig:RQABP}
+%\end{figure}
+%%%---------------------------------(FIGURE)------------------------------------
 
 %\subsection*{RQA metrics with fixed parameters}
 %Considering that RQA metrics were computed with fixed embedding parameters 
