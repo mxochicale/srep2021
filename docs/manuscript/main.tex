@@ -1291,11 +1291,11 @@ $ \{ m \in \mathbb{R} | 1 \le m \le 10  \} $,
 $  \{ \tau \in \mathbb{R} | 1 \le \tau \le 10  \} $ 
 incrementing by 1 each run, with recurrence thresholds $\epsilon=1, 2, 3$ 
 and levels of smoothness (sg0, sg1, sg2).  
-Figure \ref{fig:RQA-IND} shows that increasing recurrence 
+Figure \ref{fig06}(A) shows that increasing recurrence
 threshold leads to an increase in ENTR regardless of level of smoothness.  
-Similarly, increasing level of smoothness will also increase ENTR (figure \ref{fig:RQA-IND}).
+Similarly, increasing level of smoothness will also increase ENTR (figure \ref{fig06}(A)).
 In terms of movement or performer, RQA ENTR decrease from Slow (HS, VS) to Fast (HF, VF) 
-for both human (HS01) and (RS01) (Figures~\ref{fig:3dRQAENTR_sensoractivities}).
+for both human (HS01) and (RS01) (Figures~\ref{fig06}(B)).
 In terms of individual differences, for human participants, 
 figure \ref{fig:3dRQAENTR_participantsactivities} compares p01, p02 and p03 (for illustrative purposes) --
 both between each other and in comparison with the more consistent performance of the robot.  
@@ -1306,44 +1306,41 @@ capture with number of samples, although this has less of an effect on RQA ENTR.
 %%---------------------------------(FIGURE)-------------------------------------
 \begin{figure}
 \centering
-\includegraphics[width=1.0\textwidth]{figures/rqa/output/rqa-epsilons}
+\includegraphics[width=1.0\textwidth]{figures/fig06/versions/drawing-v00}
     \caption
 	[3D surface plots of RQA ENTR values]{
 	{\bf 
-	3D surface plots of RQA ENTR values for different recurrence threshold and smoothness levels.}
-	RQA ENTR values are
-	for embedding parameters
-	$ \{ m \in \mathbb{R} | 0 \le m \le 10  \} $,
-	$ \{ \tau \in \mathbb{R} | 0 \le \tau \le 10  \} $
-	incrementing by one and three recurrence thresholds $\epsilon=1, 2, 3$.
-	RQA ENTR values were computed with data from $p03$, sensor HS01, with 
-	a window size of 10-secs (500 samples).
+	3D surface plots of RQA ENTR values for different recurrence threshold and smoothness levels (A) and for different sensors and activities (B).}
+	RQA ENTR values are for embedding parameters $ \{ m \in \mathbb{R} | 0 \le m \le 10  \} $, $ \{ \tau \in \mathbb{R} | 0 \le \tau \le 10  \}$ incrementing by one and three recurrence thresholds $\epsilon=1, 2, 3$.
+	RQA ENTR values were for A were computed with data from $p03$, sensor HS01, with a window size of 10-secs (500 samples).
+	RQA ENTR values are for embedding parameters $ \{ m \in \mathbb{R} | 0 \le m \le 10  \}$, $ \{ \tau \in \mathbb{R} | 0 \le \tau \le 10  \}$ with $\epsilon = 1 $ considering four activities: Horizontal Normal (HN), Horizontal Faster(HF), Vertical Normal(VN), Vertical Faster (VF), and sensors: Human Sensor 01 (HS01) and Robot Sensor (RS01).
+	RQA ENTR values for B were computed from data of $p03$, sg0 and window size of 10-secs (500 samples).
 	Code and data to reproduce the figure is available in \cite{srep2021}.
         }
-    \label{fig:RQA-IND}
+    \label{fig06}
 \end{figure}
 %%---------------------------------(FIGURE)------------------------------------
 
-%%---------------------------------(FIGURE)-------------------------------------
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/rqa/output/rqa-sensors-activities}
-    \caption{
-	{\bf 3D surface plots of RQA ENTR values for different sensors and activities.}
-	RQA ENTR values are for embedding parameters
-	$ \{ m \in \mathbb{R} | 0 \le m \le 10  \}$,
-	$ \{ \tau \in \mathbb{R} | 0 \le \tau \le 10  \}$
-	with $\epsilon = 1 $ considering four activities 
-	Horizontal Normal (HN), Horizontal Faster(HF), Vertical Normal(VN), and 
-	Vertical Faster (VF) and sensors Human Sensor 01 (HS01) and 
-	Robot Sensor (RS01).
-	RQA ENTR values were computed from data of $p03$, sg0 and 
-	window size of 10-secs (500 samples).
-	Code and data to reproduce the figure is available in \cite{srep2021}.
-       }
-\label{fig:3dRQAENTR_sensoractivities}
-\end{figure}
-%%---------------------------------(FIGURE)-------------------------------------
+%%%---------------------------------(FIGURE)-------------------------------------
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=1.0\textwidth]{figures/rqa/output/rqa-sensors-activities}
+%    \caption{
+%	{\bf 3D surface plots of RQA ENTR values for different sensors and activities.}
+%	RQA ENTR values are for embedding parameters
+%	$ \{ m \in \mathbb{R} | 0 \le m \le 10  \}$,
+%	$ \{ \tau \in \mathbb{R} | 0 \le \tau \le 10  \}$
+%	with $\epsilon = 1 $ considering four activities
+%	Horizontal Normal (HN), Horizontal Faster(HF), Vertical Normal(VN), and
+%	Vertical Faster (VF) and sensors Human Sensor 01 (HS01) and
+%	Robot Sensor (RS01).
+%	RQA ENTR values were computed from data of $p03$, sg0 and
+%	window size of 10-secs (500 samples).
+%	Code and data to reproduce the figure is available in \cite{srep2021}.
+%       }
+%\label{fig:3dRQAENTR_sensoractivities}
+%\end{figure}
+%%%---------------------------------(FIGURE)-------------------------------------
 
 %%---------------------------------(FIGURE)-------------------------------------
 \begin{figure}[ht]
