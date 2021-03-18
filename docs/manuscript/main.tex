@@ -234,7 +234,7 @@ reconstructed state space determined:
 With this in mind, an embedding is defined as "a smooth one-to-one 
 coordinate transformation with a smooth inverse" and the total reconstruction 
 map is defined as $ \Xi = \Psi \circ \Phi $ \cite{casdagli1991}.
-Fig~\ref{fig:ssr} illustrates the state space reconstruction.
+Figures~\ref{fig01}(A.1 to D.1) illustrates the state space reconstruction.
 %%---------------------------------(FIGURE)-------------------------------------
 \begin{figure}[ht]
 \centering
@@ -265,7 +265,7 @@ Fig~\ref{fig:ssr} illustrates the state space reconstruction.
 	Figures A.3 to F.3 are adapted from \cite{marwan2015}.
 	Code and data to reproduce the figure is available in \cite{srep2021}.
     }
-    \label{fig:ssr}
+    \label{fig01}
 \end{figure}
 %%---------------------------------(FIGURE)-------------------------------------
 
@@ -308,9 +308,6 @@ $N-(m-1)\tau$ defines the length of each delayed copy
 of $\{ \boldsymbol{ \tilde{x} }_n \}$ in $\boldsymbol{X}^{m}_{\tau}$.
 %For further details and explicit examples of uniform time-delay 
 %embedding methodology, we refer the reader to the \nameref{S1_AppendixA}.
-
-
-
 
 \subsection*{Estimation of Embedding Parameters}
 The estimation of the embedding parameters ($m$ and $\tau$) 
@@ -387,28 +384,28 @@ not constant for all $m$ (e.g. $E_2(m) \neq 1$).
 
 As an example of the use of $E_1(m)$ and $E_2(m)$ values, we consider two time 
 series: the solution for the $x$ variable of the Lorenz system 
-(Fig~\ref{fig:caoami}A), and a Gaussian noise time series with zero mean 
-and a variance of one (Fig~\ref{fig:caoami}B).
+(Fig~\ref{fig01}A.2), and a Gaussian noise time series with zero mean
+and a variance of one (Fig~\ref{fig01}B.2).
 We then compute $E_1(m)$ and $E_2(m)$ values for each time series.
 The $E_1(m)$ values for the chaotic time series appear to be constant
 after the dimension is equal to six.
 The determination of six is given that any value of $m$ can be used as they 
-are within the threshold of $1\pm0.05$ (Fig~\ref{fig:caoami}C).
+are within the threshold of $1\pm0.05$ (Fig~\ref{fig01}C.2).
 $E_2(m)$ values, for chaotic time series, are different to one 
-(Fig~\ref{fig:caoami}E), for which, it can be concluded that for the 
+(Fig~\ref{fig01}E.2), for which, it can be concluded that for the
 chaotic time series the minimum embedding dimension the time series 
 comes from a deterministic signal. With regard to the noise time series,  
 $E_1(m)$ values appeared to be constant when $m$ is close to thirteen, 
-which is defined by the threshold of $1\pm0.05$ (Fig~\ref{fig:caoami}D).
+which is defined by the threshold of $1\pm0.05$ (Fig~\ref{fig01}D.2).
 $E_1(m)$ values then indicate the minimum embedding dimension of the 
 noisy time series is thirteen, however all of the $E_2(m)$ values are 
-approximately equal to one (Figure~\ref{fig:caoami}F) for which it can be 
+approximately equal to one (Figure~\ref{fig01}F.2) for which it can be
 concluded that noise time series is a stochastic signal.
 It is important to note that for this work not only $E_1(m)$ and $E_2(m)$ are 
 computed but also a variation of $\tau$ from 1 to 20 is presented. 
 The purpose of such variation for $\tau$ is to show its independence with
 regard to $E_1(m)$ and $E_2(m)$ values as $\tau$ is increasing 
-(Fig~\ref{fig:caoami}C,D,E and F). 
+(Fig~\ref{fig01}C.2,D.2,E.2 and F.2).
 However, one negative of the Cao's algorithm \cite{Cao1997} is the definition of 
 a new threshold where $m$ values appear to be constant in $E_1 (m)$.
 In the case of the given examples and reported results, we defined such 
@@ -466,7 +463,7 @@ where the redundancy is the least" \cite{kantz2003}.
 For example, we compute the AMI for two time series:
 A) the $x$ solution of the Lorenz system, and
 B) a noise time series using a normal distribution with mean zero and 
-standard deviation equal to one. From Fig~\ref{fig:caoami}(G, H), it can then be 
+standard deviation equal to one. From Fig~\ref{fig01}(G.2, H.2), it can then be
 concluded that the amount of knowledge for any noise time series is zero 
 for which the first minimum embedding parameter is $\tau_0=1$. 
 On the contrary, the first minimum of the AMI for the chaotic time series 
@@ -546,7 +543,7 @@ whenever $X(i)$ is sufficiently close to $X(j)$:
 where $\quad i,j=1,\dots,N$, $\epsilon$ is a threshold distance, 
 $|| \cdotp ||$ a norm, and $\Theta(\cdotp)$ is the Heaviside 
 function (i.e. $\Theta(x)=0$, if $x<0$, and $\Theta(x)=1$ otherwise) 
-(Fig~\ref{fig:rps}(A,B)) \cite{eckmann1987, marwan2007,marwan2015}.
+(Fig~\ref{fig01}(A.3,B.3)) \cite{eckmann1987, marwan2007,marwan2015}.
 RP is also characterised with a line of identity (LOI) which is a  
 diagonal line due to $ R_{i,j}=1 (i,j=1,\dots,N)$. 
 
@@ -559,16 +556,16 @@ Pattern formations in the RPs can be designated either
 as topology for large-scale patterns or texture for small-scale patterns.
 In the case of topology, the following pattern formations are commonly presented:
 (i) homogeneous where uniform recurrence points are spread in the RP e.g., 
-uniformly distributed noise (Fig~\ref{fig:rps}C), 
+uniformly distributed noise (Fig~\ref{fig01}C.3),
 (ii) periodic and quasi-periodic systems where diagonal lines and 
 checkerboard structures represent oscillating systems, e.g., sinusoidal 
-signals (Fig~\ref{fig:rps}D), 
+signals (Fig~\ref{fig01}D.3),
 (iii) drift where paling or darkening recurrence points away from 
 the LOI is caused by drifting systems, 
-e.g., logistic map (Fig~\ref{fig:rps}E), and
+e.g., logistic map (Fig~\ref{fig01}E.3), and
 (iv) disrupted where recurrence points are presented white areas or 
 bands that indicate abrupt changes in the dynamics, e.g. Brownian motion 
-(Fig~\ref{fig:rps}F) \cite{eckmann1987, marwan2015}.
+(Fig~\ref{fig01}F.3) \cite{eckmann1987, marwan2015}.
 Texture patterns in RPs can be categorised as:
 (i) single or isolated recurrence points that represent rare occurring states, 
 and do not persist for any time or fluctuate heavily,
