@@ -230,35 +230,36 @@ reconstructed state space determined:
 With this in mind, an embedding is defined as "a smooth one-to-one 
 coordinate transformation with a smooth inverse" and the total reconstruction 
 map is defined as $ \Xi = \Psi \circ \Phi $ \cite{casdagli1991}.
-Figures~\ref{fig01}(A.1 to D.1) illustrates the state space reconstruction.
+Figures~\ref{fig01}A illustrates the state space reconstruction.
 %%---------------------------------(FIGURE)-------------------------------------
 \begin{figure}[ht]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/fig01/versions/drawing-v00}
+\includegraphics[width=1.0\textwidth]{figures/fig01/versions/drawing-v01}
     \caption{
-	{\bf State space reconstruction methodology.}
+	{\bf State space reconstruction methodology (A),
+		Minimum delay embedding values with AMI's method and minimum dimension embedding values with Cao's method (B), and
+		Recurrence Plots and its patterns (C).
+	}
 		State space reconstruction is based on $x(t)=h[s(t)]= h[f^t [s(0)]]$ where $f^t$ is the true dynamical system, $s(t)$ indicates the state, $s$, at time, $t$,  and $h[ ]$ the measurement function.
 		The time-delay embedding represented as the $\Phi$, maps the original $d-$dimensional state $s(t)$ into the $m-$dimensional uniform time-delay embedding matrix $\boldsymbol{X}(t)$.
     	The transformation map $\Psi$ then maps $\boldsymbol{X}(t)$ into a new state $y(t)$ of dimensions $n < m$.
-    	(A.1) $M-$dimensional manifold representing the state space (e.g. Lorenz system);
-    	(B.1) Delayed copies of $1-$dimensional $x(t)$ from the Lorenz system;
-		(C.1) $m-$dimensional reconstructed state space with \texorpdfstring{$m$}{m} and    \texorpdfstring{$\tau$}{T}, and
-    	(D.1) $y(t)$ is the $n-$dimensional reconstructed state space.
+    	(a1) $M-$dimensional manifold representing the state space (e.g. Lorenz system);
+    	(a2) Delayed copies of $1-$dimensional $x(t)$ from the Lorenz system;
+		(a3) $m-$dimensional reconstructed state space with \texorpdfstring{$m$}{m} and    \texorpdfstring{$\tau$}{T}, and
+    	(a4) $y(t)$ is the $n-$dimensional reconstructed state space.
 	The total reconstruction map is represented as $\Xi = \Psi \circ \Phi $where $\Phi$ is the delay reconstruction map and $\Psi$ is the coordinate transformation map.
-	A.1 to D.1 figures are adapted from \cite{Quintana-Duque2012, casdagli1991, uzal2011}.
-	{\bf Minimum delay embedding values with AMI's method and minimum dimension embedding values with Cao's method.} 
-	(A.2) chaotic and (B.2) random time series.
-	(C.2, D.2) $E_1 (m)$ values and (E.2, F.2) $E_2(m)$ values with variations of $\tau$ values from one to twenty for chaotic and random time series.
-	(G.2, H.2) AMI values where its first minimum value in the curve is the minimum time delay embedding ($\tau_0$).
-	{\bf Recurrence Plots and its patterns.} 
-	(A.3) State space of the Lorenz system with controlling parameters ($\rho=28, \sigma=10, \beta=8/3$) where the point, $j$, in trajectory $X()$ which falls into the neighborhood (black circle) of a given point at $i$ is a recurrent point and is represented as a black dot in the recurrence plot at location $(i, j)$ or white otherwise.
-	(B.3) Recurrence plot using the three components of the Lorenz system and the RP with no embeddings and threshold $\epsilon=5$.
+	a1 to a4 figures are adapted from \cite{Quintana-Duque2012, casdagli1991, uzal2011}.
+	(b1) chaotic and (b5) random time series.
+	(b2, b6) $E_1 (m)$ values and (b3, b7) $E_2(m)$ values with variations of $\tau$ values from one to twenty for chaotic and random time series.
+	(b4, b8) AMI values where its first minimum value in the curve is the minimum time delay embedding ($\tau_0$).
+	(c1) State space of the Lorenz system with controlling parameters ($\rho=28, \sigma=10, \beta=8/3$) where the point, $j$, in trajectory $X()$ which falls into the neighborhood (black circle) of a given point at $i$ is a recurrent point and is represented as a black dot in the recurrence plot at location $(i, j)$ or white otherwise.
+	(c2) Recurrence plot using the three components of the Lorenz system and the RP with no embeddings and threshold $\epsilon=5$.
 	Time-series with its respective recurrence plot for:
-	(C.3) uniformly distributed noise,
-	(D.3) super-positionet harmonic oscillation ($sin( \frac{1}{5}*t) * sin( \frac{5}{100}*t) $),
-	(E.3) drift logistic map ($x_{i+1} = 4 x_i (1- x_i) $) corrupted with a linearly increase term ($0.01*i$), and
-	(F.3) disrupted brownian motion  ($x_{i+1} = x_i + 2*rnorm(1) $).
-	Figures A.3 to F.3 are adapted from \cite{marwan2015}.
+	(c3) uniformly distributed noise,
+	(c4) super-positionet harmonic oscillation ($sin( \frac{1}{5}*t) * sin( \frac{5}{100}*t) $),
+	(c5) drift logistic map ($x_{i+1} = 4 x_i (1- x_i) $) corrupted with a linearly increase term ($0.01*i$), and
+	(c6) disrupted brownian motion  ($x_{i+1} = x_i + 2*rnorm(1) $).
+	Figures in C are adapted from \cite{marwan2015}.
 	Code and data to reproduce the figure is available in \cite{srep2021}.
     }
     \label{fig01}
@@ -380,28 +381,28 @@ not constant for all $m$ (e.g. $E_2(m) \neq 1$).
 
 As an example of the use of $E_1(m)$ and $E_2(m)$ values, we consider two time 
 series: the solution for the $x$ variable of the Lorenz system 
-(Fig~\ref{fig01}A.2), and a Gaussian noise time series with zero mean
-and a variance of one (Fig~\ref{fig01}B.2).
+(Fig~\ref{fig01}b1), and a Gaussian noise time series with zero mean
+and a variance of one (Fig~\ref{fig01}b5).
 We then compute $E_1(m)$ and $E_2(m)$ values for each time series.
 The $E_1(m)$ values for the chaotic time series appear to be constant
 after the dimension is equal to six.
 The determination of six is given that any value of $m$ can be used as they 
-are within the threshold of $1\pm0.05$ (Fig~\ref{fig01}C.2).
+are within the threshold of $1\pm0.05$ (Fig~\ref{fig01}b2).
 $E_2(m)$ values, for chaotic time series, are different to one 
-(Fig~\ref{fig01}E.2), for which, it can be concluded that for the
+(Fig~\ref{fig01}b3), for which, it can be concluded that for the
 chaotic time series the minimum embedding dimension the time series 
 comes from a deterministic signal. With regard to the noise time series,  
 $E_1(m)$ values appeared to be constant when $m$ is close to thirteen, 
-which is defined by the threshold of $1\pm0.05$ (Fig~\ref{fig01}D.2).
+which is defined by the threshold of $1\pm0.05$ (Fig~\ref{fig01}b6).
 $E_1(m)$ values then indicate the minimum embedding dimension of the 
 noisy time series is thirteen, however all of the $E_2(m)$ values are 
-approximately equal to one (Figure~\ref{fig01}F.2) for which it can be
+approximately equal to one (Figure~\ref{fig01}b7) for which it can be
 concluded that noise time series is a stochastic signal.
 It is important to note that for this work not only $E_1(m)$ and $E_2(m)$ are 
 computed but also a variation of $\tau$ from 1 to 20 is presented. 
 The purpose of such variation for $\tau$ is to show its independence with
 regard to $E_1(m)$ and $E_2(m)$ values as $\tau$ is increasing 
-(Fig~\ref{fig01}C.2,D.2,E.2 and F.2).
+(Fig~\ref{fig01}b2,b3,b6, and b7).
 However, one negative of the Cao's algorithm \cite{Cao1997} is the definition of 
 a new threshold where $m$ values appear to be constant in $E_1 (m)$.
 In the case of the given examples and reported results, we defined such 
@@ -459,7 +460,7 @@ where the redundancy is the least" \cite{kantz2003}.
 For example, we compute the AMI for two time series:
 A) the $x$ solution of the Lorenz system, and
 B) a noise time series using a normal distribution with mean zero and 
-standard deviation equal to one. From Fig~\ref{fig01}(G.2, H.2), it can then be
+standard deviation equal to one. From Fig~\ref{fig01}(b4, b8), it can then be
 concluded that the amount of knowledge for any noise time series is zero 
 for which the first minimum embedding parameter is $\tau_0=1$. 
 On the contrary, the first minimum of the AMI for the chaotic time series 
@@ -539,7 +540,7 @@ whenever $X(i)$ is sufficiently close to $X(j)$:
 where $\quad i,j=1,\dots,N$, $\epsilon$ is a threshold distance, 
 $|| \cdotp ||$ a norm, and $\Theta(\cdotp)$ is the Heaviside 
 function (i.e. $\Theta(x)=0$, if $x<0$, and $\Theta(x)=1$ otherwise) 
-(Fig~\ref{fig01}(A.3,B.3)) \cite{eckmann1987, marwan2007,marwan2015}.
+(Fig~\ref{fig01}(c1,c2)) \cite{eckmann1987, marwan2007,marwan2015}.
 RP is also characterised with a line of identity (LOI) which is a  
 diagonal line due to $ R_{i,j}=1 (i,j=1,\dots,N)$. 
 
@@ -552,16 +553,16 @@ Pattern formations in the RPs can be designated either
 as topology for large-scale patterns or texture for small-scale patterns.
 In the case of topology, the following pattern formations are commonly presented:
 (i) homogeneous where uniform recurrence points are spread in the RP e.g., 
-uniformly distributed noise (Fig~\ref{fig01}C.3),
+uniformly distributed noise (Fig~\ref{fig01}c3),
 (ii) periodic and quasi-periodic systems where diagonal lines and 
 checkerboard structures represent oscillating systems, e.g., sinusoidal 
-signals (Fig~\ref{fig01}D.3),
+signals (Fig~\ref{fig01}c4),
 (iii) drift where paling or darkening recurrence points away from 
 the LOI is caused by drifting systems, 
-e.g., logistic map (Fig~\ref{fig01}E.3), and
+e.g., logistic map (Fig~\ref{fig01}c5), and
 (iv) disrupted where recurrence points are presented white areas or 
 bands that indicate abrupt changes in the dynamics, e.g. Brownian motion 
-(Fig~\ref{fig01}F.3) \cite{eckmann1987, marwan2015}.
+(Fig~\ref{fig01}c7) \cite{eckmann1987, marwan2015}.
 Texture patterns in RPs can be categorised as:
 (i) single or isolated recurrence points that represent rare occurring states, 
 and do not persist for any time or fluctuate heavily,
