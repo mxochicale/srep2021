@@ -818,23 +818,23 @@ Such simple movements were repeated ten times for the participant
 who copied NAO's arm movements in a face-to-face imitation activity.
 Also, wearable inertial measurement unit (IMU) sensors were attached 
 to the right hand of the participant and to the left hand of the robot 
-(Figure~\ref{fig02}A.1,C.1). Data were then collected with four NeMEMSi
+(Figure~\ref{fig02}a1,a3). Data were then collected with four NeMEMSi
 IMU sensors with sampling rate of 50Hz provinding tri-axial data of the 
 accelerometer, gyroscope and magnetometer sensors and quaternions 
 \cite{Comotti2014}.
 %%---------------------------------(FIGURE)-------------------------------------
 \begin{figure}[ht]
   \centering
-\includegraphics[width=1.0\textwidth]{figures/fig02/versions/drawing-v00.png}
+\includegraphics[width=1.0\textwidth]{figures/fig02/versions/drawing-v01.png}
     \caption{
-	{\bf Human-humanoid imitation activities.} 
-		Face-to-face human-humanoid imitation (HHI) activities for (A.1) HHI of horizontal arm movement, (B.1) Humanoid horizontal arm movement, (C.1) HHI of vertical arm movement, and (D.1) Humanoid vertical arm movement.
-	{\bf Time series duration for arm movements.}
-    	Time series of smoothed data from gyroscope sensor for different speed arm movements performed by NAO: (A.2) Horizontal Normal arm movement (HN), (B.2) Horizontal Faster arm movement (HF), (C.2) Vertical Normal arm movement (VN) and (D.2) Vertical Faster arm movement (VF).
-		(A.2) shows window sizes for 2-seconds (100 samples), 5-seconds (250 samples), 10-seconds (500 samples) and 15-seconds (750 samples) which are also presented in (B.2), (C.2) and (D.2).
-	{\bf Time series for horizontal and vertical arm movements.}
-		(A.3/D.3) raw-normalised (sg0zmuv), (B.3/E.3) normalised-smoothed 1 (sg1zmuv) and (C.3/F.3) normalised-smoothed 2 (sg2zmuv).
-		Time series are only for three participants	($p01$, $p02$, and $p03$) for horizontal and vertical arm movements in normal and faster velocity (HN, HF, VN, VF) with the normalised GyroZ or GyroY axis and with one sensor attached to the participant (HS01) and other sensor attached to the robot (RS01).
+	{\bf Human-humanoid imitation activities (A). Time series duration for arm movements (B).
+		Time series for horizontal and vertical arm movements (C).
+	}
+	Face-to-face human-humanoid imitation (HHI) activities for (a1) HHI of horizontal arm movement, (a2) Humanoid horizontal arm movement, (a3) HHI of vertical arm movement, and (a4) Humanoid vertical arm movement.
+    Time series of smoothed data from gyroscope sensor for different speed arm movements performed by NAO: (b1) Horizontal Normal arm movement (HN), (b2) Horizontal Faster arm movement (HF), (b3) Vertical Normal arm movement (VN) and (b4) Vertical Faster arm movement (VF).
+	(B) shows window sizes for 2-seconds (100 samples), 5-seconds (250 samples), 10-seconds (500 samples) and 15-seconds (750 samples).
+	(c1,c4) raw-normalised (sg0zmuv), (c2,c5) normalised-smoothed 1 (sg1zmuv) and (c3,c7) normalised-smoothed 2 (sg2zmuv).
+	Time series are only for three participants	($p01$, $p02$, and $p03$) for horizontal and vertical arm movements in normal and faster velocity (HN, HF, VN, VF) with the normalised GyroZ or GyroY axis and with one sensor attached to the participant (HS01) and other sensor attached to the robot (RS01).
 	Code and data to reproduce the figure is available in \cite{srep2021}.
 }
     \label{fig02}
@@ -874,9 +874,9 @@ Then, each participant was asked to imitate repetitions of simple horizontal
 and vertical arm movements performed by the humanoid robot in the following 
 conditions:
 (i) ten repetitions of horizontal arm movement at normal (HN) 
-	and faster (HF) speed (Figure~\ref{fig02}A.1), and
+	and faster (HF) speed (Figure~\ref{fig02}a1), and
 (ii) ten repetitions of vertical arm movement at normal (VN) 
-	and faster (VF) speed (Figure~\ref{fig02}C.1).
+	and faster (VF) speed (Figure~\ref{fig02}a3).
 The normal and faster speed of arm movements is defined by the duration 
 in number of samples of one repetition of NAO's arm movements. 
 We select NAO's arm movements duration to distinguish between normal and 
@@ -892,7 +892,7 @@ which is around 300 samples of data. For vertical arm movement at
 faster speed, VF, each repetition lasts about 2.4 seconds which correspond 
 to 120 samples of data.
 To visualise the distinction between normal and faster speed for horizontal 
-and vertical arm movements, Fig~\ref{fig02}A.2-D.2 shows smoothed time series
+and vertical arm movements, Fig~\ref{fig02}B shows smoothed time series
 for axes Z and Y of the gyroscope sensors with four window lengths: 
 2-sec (100-samples), 5-sec (250-samples), 10-sec (500-samples) 
 and 15-sec (750-samples).
@@ -939,7 +939,7 @@ we considered various conditions of time series collected for this work:
 Due to space limitations and to have simple visualisation, 
 we only present 10-sec (500 samples) window length time series for 
 three participants (p01, p01 and p03) performing horizontal 
-arm movements (axis GyroZ) and vertical arm movements (axis GyroY) (Figs \ref{fig02}A.3-F.3).
+arm movements (axis GyroZ) and vertical arm movements (axis GyroY) (Figs \ref{fig02}C).
 %%%---------------------------------(FIGURE)-------------------------------------
 %\begin{figure}[ht]
 %\centering
@@ -1082,7 +1082,7 @@ random hand gestures. Therefore, for the four activities
 (HN, HF, VN, and VF) in this work, which are mainly repetitive, 
 we select only four window sizes for analysis: 2-s window (100 samples), 
 5-s window (250 samples), 10-s (500 samples) and 15-s window (750 samples) 
-(Figures~\ref{fig02}A.2-D.2).
+(Figures~\ref{fig02}B).
 
 %*******************************************************************************
 %*******************************************************************************
@@ -1158,7 +1158,7 @@ Recurrence Plots and Recurrence Quantification Analysis.
 \includegraphics[width=1.0\textwidth]{figures/rss/versions/drawing-v00.pdf}
 \caption{
 	{\bf RSSs for horizontal and vertical arm movements.}
-	Reconstructed state spaces for time series for p01 of Figure \ref{fig02}A.3-F.3.
+	Reconstructed state spaces for time series for p01 of Figure \ref{fig02}C.
 	Reconstructed state spaces were computed with 
 	embedding parameters 
 	$\overline{m}_0=6$, $\overline{\tau}_0=8$
