@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
-   sodipodi:docname="drawing-v00.svg">
+   sodipodi:docname="drawing-v01.svg">
   <defs
      id="defs2">
     <clipPath
@@ -46,9 +46,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.26584326"
-     inkscape:cx="1739.8825"
-     inkscape:cy="452.84692"
+     inkscape:zoom="0.18797957"
+     inkscape:cx="1176.3227"
+     inkscape:cy="1143.8194"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -80,13 +80,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-86.999983)">
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000eff;stroke-width:9.79671;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-       id="rect113"
-       width="738.99011"
-       height="352.09497"
-       x="-52.427254"
-       y="4.757453" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.237617px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0445533"
@@ -151,12 +144,12 @@
            id="tspan867"
            style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Light Italic';stroke-width:0.0370419">Description for Routine Mode</tspan></tspan></text>
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000eff;stroke-width:6.09492;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000eff;stroke-width:9.03085;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="rect113-3"
-       width="373.06372"
-       height="269.95483"
-       x="-129.84485"
-       y="477.76569" />
+       width="634.40955"
+       height="348.5188"
+       x="-44.943623"
+       y="23.168314" />
     <image
        y="249.97224"
        x="12.950217"
@@ -707,7 +700,7 @@
          id="tspan121"
          x="3.1528397"
          y="121.5738"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1911px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.401225">A.1</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1911px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.401225">a1</tspan></text>
     <text
        id="text127"
        y="165.75717"
@@ -718,7 +711,7 @@
          y="165.75717"
          x="3.5500484"
          id="tspan125"
-         sodipodi:role="line">A.2</tspan></text>
+         sodipodi:role="line">a2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.81468px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.401225"
@@ -729,7 +722,7 @@
          id="tspan129"
          x="2.0760512"
          y="214.75668"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1911px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.401225">A.3</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1911px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.401225">a3</tspan></text>
     <text
        id="text135"
        y="257.28732"
@@ -740,7 +733,7 @@
          y="257.28732"
          x="3.7899795"
          id="tspan133"
-         sodipodi:role="line">A.4</tspan></text>
+         sodipodi:role="line">a4</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.81468px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.401225"
@@ -751,7 +744,7 @@
          id="tspan121-1"
          x="158.44691"
          y="121.44732"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1911px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.401225">B.1</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1911px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.401225">b1</tspan></text>
     <text
        id="text127-5-3"
        y="164.5144"
@@ -762,7 +755,7 @@
          y="164.5144"
          x="158.30048"
          id="tspan125-5"
-         sodipodi:role="line">B.2</tspan></text>
+         sodipodi:role="line">b2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.81468px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.401225"
@@ -773,7 +766,7 @@
          id="tspan129-7"
          x="157.20718"
          y="215.0004"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1911px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.401225">B.3</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1911px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.401225">b3</tspan></text>
     <text
        id="text135-6"
        y="257.02322"
@@ -784,7 +777,7 @@
          y="257.02322"
          x="156.93141"
          id="tspan133-5"
-         sodipodi:role="line">B.4</tspan></text>
+         sodipodi:role="line">b4</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:24.1947px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.401225"
@@ -1600,7 +1593,7 @@
          id="tspan993"
          x="309.65979"
          y="118.92384"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8064px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.0442737px">C.1</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8064px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.0442737px">c1</tspan></text>
     <text
        id="text999"
        y="118.39944"
@@ -1611,7 +1604,7 @@
          y="118.39944"
          x="404.19159"
          id="tspan997"
-         sodipodi:role="line">C.2</tspan></text>
+         sodipodi:role="line">c2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:1.77096px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0442737px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1622,7 +1615,7 @@
          id="tspan1001"
          x="307.66336"
          y="213.74632"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8064px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.0442737px">C.3</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8064px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.0442737px">c3</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.77096px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0442737px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1633,7 +1626,7 @@
          id="tspan1009"
          x="404.01181"
          y="212.2076"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8064px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.0442737px">C.4</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8064px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.0442737px">c4</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot219"
