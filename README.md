@@ -15,7 +15,12 @@ Hence this work might enhance the development of better diagnostic tools for app
 ## arXiv preprint
 https://arxiv.org/abs/1810.09249
 
-BibTeX
+
+## Licence and Citation 
+The work of this manuscript is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 
+Hence, you are free to reuse it and modify it as much as you want and as long as you cite [this manuscript](https://github.com/mxochicale/srep2021) as original reference and you re-share your work under the same terms. 
+
+## BibTeX to cite
 ```
 @misc{xochicale2021,
       title={	Nonlinear methods to quantify Movement Variability 
@@ -27,10 +32,6 @@ BibTeX
       primaryClass={eess.SP}
 }
 ```
-
-## Licence
-The work of this manuscript is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 
-Hence, you are free to reuse it and modify it as much as you want and as long as you cite [this manuscript](https://github.com/mxochicale/srep2021) as original reference and you re-share your work under the same terms. 
 
 ## Contact
 If you have specific questions about the content of this repository, you can contact [Miguel Xochicale](mailto:perez.xochicale@gmail.com?subject="[srep2021]").  
