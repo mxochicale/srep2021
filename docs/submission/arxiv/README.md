@@ -1,65 +1,63 @@
-# arXiv submission process
-
-## preparing files to submit to arxiv 
-1. amenments for "main-arxiv.tex"
-comment
+# arXiv submission
+## Preparation
+1. copy tex files and images to arxiv/files path
 ```
-%\graphicspath{{../}} %goes to path: docs/
-```
-comment and add 
-```
-%\bibliography{references.bib}
-\input{main-arxiv.bbl}
+sh A_copy-tex-figures.sh
 ```
 
-2. Copy pdf files of images and modify names in main-arxiv.tex
+2. edit `main.tex` as follows
+```
+%\graphicspath{{../figures}} %goes to path: figures/
 
-3. Copy references.bib in the path 
+\includegraphics[width=1.0\textwidth]{fig01}
+...
+\includegraphics[width=1.0\textwidth]{fig08}
 
-4. compite in one path
-uncomment
-```
-\bibliography{references}
-```
-compile tex file
-```
-pdflatex main-arxiv.tex
-bibtex main-arxiv
-```
-uncomment/comment
-
-```
-%\bibliography{references}
-\input{main-arxiv.bbl}
+\bibliography{../../../../references/references}
 ```
 
-
-compile tex
+3. compile `main.tex` file
 ```
-pdflatex main-arxiv.tex
-pdflatex main-arxiv.tex
+cd version/05
+sh ../../B_pdflatex-bibtex.sh
 ```
-
-clean project 
+3.1 edit reference section as follows
 ```
-rm -f *.aux *.blg *.log *.out main-arxiv.pdf 
-```
-
-4. compress it as zip and upload it
-```
-zip -r v03.zip v03/
+%%\bibliography{../references/references}
+\input{main.bbl} %% uncomment for arxiv version
 ```
 
-5. upload zip file to arxiv and delete zip file.
+3.2 compile `main.tex`
+```
+cd version/v05/
+sh ../../C_pdflatex-pdflatex.sh
+```
+
+3.3 check pdf 
+```
+evince versions/v05/main.pdf
+```
+3.4 clean project 
+```
+cd versions/v05/
+sh ../../D_clean-tex-project.sh
+```
+
+4. compress it as zip 
+```
+sh E_zip_files.sh v01
+```
+
+
+:tada: zip is ready to be submitted in arXiv
+
+
+## Submission
+upload zip file to arxiv and delete zip file.
 * Click on replace icon 
 * Add files/choose zip and updload/
 * Continue process files
 * Preview your PDF and 
-
-6. delate zip file
-```
-rm -rf *.zip
-```
 
 ## References
 * [:link:](https://tex.stackexchange.com/questions/329198/how-to-obtain-and-use-the-bbl-file-in-my-tex-document-for-arxiv-submission)
