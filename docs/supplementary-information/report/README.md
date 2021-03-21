@@ -1,15 +1,16 @@
 # Report
 
-
-## Usage
-
-build latex report
+## Build latex report
 ```
 make
 ```
 
-clean latex report
+## Reduce PDF file size
+```
+sh reduce-pdf-size.sh
+```
+
+## clean latex report
 ```
 make clean
 ```
-
