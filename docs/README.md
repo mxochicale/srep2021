@@ -24,6 +24,22 @@
 │   │   └── sts
 │   │       ├── pdf
 │   │       └── vector
+│   ├── fig01
+│   │   ├── references
+│   │   ├── vectors
+│   │   └── versions
+│   ├── fig02
+│   │   ├── references
+│   │   ├── vectors
+│   │   └── versions
+│   ├── fig05
+│   │   ├── references
+│   │   ├── vectors
+│   │   └── versions
+│   ├── fig06
+│   │   ├── references
+│   │   ├── vectors
+│   │   └── versions
 │   ├── figures-originals
 │   │   ├── appendices
 │   │   │   ├── appendixA
@@ -283,7 +299,8 @@
 │   ├── arxiv
 │   │   ├── v01
 │   │   ├── v02
-│   │   └── v03
+│   │   ├── v03
+│   │   └── v04
 │   └── srep
 │       ├── checklist
 │       └── coverletter
@@ -291,5 +308,5 @@
 └── supplementary-information
     └── report
 
-288 directories
+305 directories
 ```
