@@ -1,11 +1,16 @@
 # LaTeX manuscript
 
-## Usage
-* Build LaTex manuscript 
+## Build latex report
 ```
 make
 ```
-* Clean LaTex manuscript 
-``` 
-make clean 
+
+## Reduce PDF file size
+```
+sh reduce-pdf-size.sh
+```
+
+## clean latex report
+```
+make clean
 ```
