@@ -2,7 +2,8 @@
 ## Preparation
 1. copy tex files and images to arxiv/files path
 ```
-sh A_copy-tex-figures.sh
+sh A0_copy-tex-files.sh
+sh A1_copy-figures-files.sh
 ```
 
 2. edit `main.tex` as follows
@@ -35,7 +36,8 @@ sh ../../C_pdflatex-pdflatex.sh
 
 3.3 check pdf 
 ```
-evince versions/v05/main.pdf
+cd version/v05/
+evince main.pdf
 ```
 3.4 clean project 
 ```
@@ -45,9 +47,9 @@ sh ../../D_clean-tex-project.sh
 
 4. compress it as zip 
 ```
-sh E_zip_files.sh v01
+cd ~/arxiv/
+sh E_zip_files.sh v05
 ```
-
 
 :tada: zip is ready to be submitted in arXiv
 
