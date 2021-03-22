@@ -12,9 +12,9 @@ Hence this work might enhance the development of better diagnostic tools for app
 ## Manuscript (100% Reproducible)
 [![GitHub Actions Status](https://github.com/mxochicale/srep2021/workflows/Compiling-TeX-Manuscript/badge.svg)](https://github.com/mxochicale/srep2021/actions) [![manuscript](https://img.shields.io/badge/read-manuscript-blue.svg)](https://github.com/mxochicale/srep2021/blob/pdfs/manuscript.pdf) (using [free-cortex framework](https://github.com/free-cortex/framework)).
 
-## arXiv preprint
-https://arxiv.org/abs/1810.09249
-
+## arXiv and papers with code links
+* https://arxiv.org/abs/1810.09249
+* https://paperswithcode.com/paper/nonlinear-methods-to-quantify-movement
 
 ## Licence and Citation 
 The work of this manuscript is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 
