@@ -1,2 +1,2 @@
 # Supplementary information
-See supplementary information [here](tex/suplementary-material.pdf).
+See supplementary information [here](tex/supplementary-material.pdf).
