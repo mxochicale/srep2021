@@ -84,12 +84,17 @@ sh E_zip_files.sh vNN
 
 
 ## Submission
-upload zip file to arxiv and delete zip file.
+* upload zip file to arxiv and delete zip file (you might need to open the files in a path to then select them and compressed them)
 * Click on replace icon 
 * Add files/choose zip and updload/
 * Continue process files
 * Preview your PDF and 
+* Click on `Continue` 
+* Check title, authorship, abstract, etc (metadata) `Save and Continue`
+* Preview article before submitting it
+* :tada: article submitted!
+
 
 ## References
-* [:link:](https://tex.stackexchange.com/questions/329198/how-to-obtain-and-use-the-bbl-file-in-my-tex-document-for-arxiv-submission)
-* [:link:](https://tex.stackexchange.com/questions/328161/problems-compiling-paper-on-arxiv)
+* https://tex.stackexchange.com/questions/329198/how-to-obtain-and-use-the-bbl-file-in-my-tex-document-for-arxiv-submission
+* https://tex.stackexchange.com/questions/328161/problems-compiling-paper-on-arxiv
