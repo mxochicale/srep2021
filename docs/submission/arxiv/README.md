@@ -1,9 +1,11 @@
 # arXiv submission
 ## Preparation
 1. copy tex files and images to arxiv/files path
+
+Change $vNN to the submission version
 ```
-sh A0_copy-tex-files.sh
-sh A1_copy-figures-files.sh
+sh A0_copy-tex-files.sh $vNN
+sh A1_copy-figures-files.sh $vNN
 ```
 
 2. edit `main.tex` as follows
@@ -17,24 +19,51 @@ sh A1_copy-figures-files.sh
 \bibliography{../../../../references/references}
 ```
 
-3. compile `main.tex` file
+3. edit `supplementary-material.tex`
+
+Comment and replace the figure number 
 ```
-cd version/05
+.
+.
+.
+%\includegraphics{figures/rqa/output/epsilons/rqa-epsilonsp03w750Vertical}
+\includegraphics{sm-fig24}
+.
+.
+.
+	
+%\bibliography{references}
+\bibliography{../../../../supplementary-material/tex/references}
+```
+
+
+4. compile `main.tex` file
+```
+cd version/vNN
 sh ../../B_pdflatex-bibtex.sh
 ```
-3.1 edit reference section as follows
+
+4.1 edit reference section as follows
+* `main.tex`
 ```
 %%\bibliography{../references/references}
 \input{main.bbl} %% uncomment for arxiv version
 ```
 
-3.2 compile `main.tex`
+* `supplementary-material.tex`
 ```
-cd version/v05/
+%%\bibliography{../references/references}
+\input{supplementary-material.bbl} %% uncomment for arxiv version
+```
+
+
+4.2 compile `main.tex`
+```
+cd version/vNN/
 sh ../../C_pdflatex-pdflatex.sh
 ```
 
-3.3 check pdf 
+4.3 check pdf 
 ```
 cd version/v05/
 evince main.pdf
@@ -48,7 +77,7 @@ sh ../../D_clean-tex-project.sh
 4. compress it as zip 
 ```
 cd ~/arxiv/
-sh E_zip_files.sh v05
+sh E_zip_files.sh vNN
 ```
 
 :tada: zip is ready to be submitted in arXiv
