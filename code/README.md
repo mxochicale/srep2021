@@ -1,4 +1,10 @@
-# Path organisation of code  
+# Code
+
+1. Installation guidelines. See [README](installation-dependencies/README.md).
+2. Demo 
+3. Provide a DOI link to the code (when is available)
+4. License 
+
 ```
 ~/Desktop/srep2020/code$ tree -d
 .
