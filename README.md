@@ -17,8 +17,8 @@ Hence this work might enhance the development of better diagnostic tools for app
 * https://paperswithcode.com/paper/nonlinear-methods-to-quantify-movement
 
 ## Licence and Citation 
-The work of this manuscript is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 
-Hence, you are free to reuse it and modify it as much as you want and as long as you cite [this manuscript](https://github.com/mxochicale/srep2021) as original reference and you re-share your work under the same terms. 
+The work of this manuscript is under Creative Commons Attribution-ShareAlike 4.0 International License [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 
+Hence, you are free to reuse it and modify it as much as you want and as long as you cite [this manuscript](https://github.com/mxochicale/srep2021) as original reference and you re-share your work under the same terms.
 
 ## BibTeX to cite
 ```

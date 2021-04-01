@@ -3,7 +3,7 @@
 1. Installation guidelines. See [README](installation-dependencies/README.md).
 2. Demo 
 3. Provide a DOI link to the code (when is available)
-4. License 
+4. License [Attribution-ShareAlike 4.0 International License](../CC-BY-4.0)
 
 ```
 ~/Desktop/srep2020/code$ tree -d
