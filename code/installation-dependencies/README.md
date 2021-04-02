@@ -2,12 +2,13 @@
 
 ## Operating system 
 ### Ubuntu 16.04x64
-Scripts were only tested under Ubuntu 16.04x64. 
-See https://releases.ubuntu.com/16.04/ for installation. 
+Scripts were only tested under Ubuntu 16.04x64.
+See [output-ubuntu1604](machineinfo/output-ubuntu1604.md) for further details of Ubuntu version and hardware of the machine where software were run.
+If users required to install Ubuntu 16.04, see https://releases.ubuntu.com/16.04/. 
 
-## R
+## R version 3.4.4 (2018-03-15)
 ### 1. installing and dependencies R
-run:
+Using a terminal in your OS, run:
 ```
 sh A_install-R.sh
 ```
@@ -37,12 +38,10 @@ git clone https://github.com/mxochicale/nonlinearTseries
 
 
 
-## GNU Octave
-
-### GNU Octave, version 4.0.2 [:link:](https://unix.stackexchange.com/questions/280195/how-to-install-octave-without-gui-in-ubuntu-16-0://unix.stackexchange.com/questions/280195/how-to-install-octave-without-gui-in-ubuntu-16-04)
-
-* withouht: sudo apt-get build-dep octave [:link:](https://askubuntu.com/questions/730322/how-to-install-octave-in-ubuntu-14-04-using-terminal#comment1083602_730333)
-
+## GNU Octave, version 4.0.2 
+### Installation
+GNU octave can be installed without: `sudo apt-get build-dep octave` [:link:](https://askubuntu.com/questions/730322/how-to-install-octave-in-ubuntu-14-04-using-terminal#comment1083602_730333)
+to which it is recommended to follow this lines:
 ```
 cd ~/Downloads
 wget ftp://ftp.gnu.org/gnu/octave/octave-4.0.2.tar.gz
@@ -56,12 +55,13 @@ sudo make install
 rm -rf octave-4.0.2
 rm octave-4.0.2.tar.gz 
 ```
+One can also install Octave without GUI in Ubuntu 16.04: [:link:](https://unix.stackexchange.com/questions/280195/how-to-install-octave-without-gui-in-ubuntu-16-04)
 
+### Uninstallation
 If you would like to remove octave [:link:](https://askubuntu.com/questions/814054/uninstalling-octave-from-ubuntu-16-04-lts), do the following:
 ```
 sudo make uninstall
 ```
-
 
 
 ## Potential issues 
