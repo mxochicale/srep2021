@@ -1,9 +1,9 @@
 # Code
 
-1. Installation guidelines. See [README](installation-dependencies/README.md).
+1. Installation of software and its dependencies. See [README](installation-dependencies/README.md) for further details.
 2. Demo 
-3. Provide a DOI link to the code (when is available)
-4. License [Attribution-ShareAlike 4.0 International License](../CC-BY-4.0)
+3. Provide a DOI link to the code (once is available)
+4. Software is under the license [Open Software License v. 3.0 (OSL-3.0)](OSL-3.0.md)
 
 ```
 ~/Desktop/srep2020/code$ tree -d
