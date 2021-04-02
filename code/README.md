@@ -1,8 +1,9 @@
 # Code
 
 ## Content 
-1. [Anthropometrics](anthropometrics/README.md) contains scripts to compute statistics for Participant, Gender, Age, Handeness, MusicTraining, RightArmLenght, Height and weight.
-2. [Creation of curated time-series](creation_of_curated_timeseries/README.md) contains `*.m` scripts to do time alignment of data of 22 participants.
+1. [Installation-dependencies](installation-dependencies/README.md) contains instructions on software versions and requirements for the current manuscript.
+2. [Anthropometrics](anthropometrics/README.md) contains scripts to compute statistics for Participant, Gender, Age, Handeness, MusicTraining, RightArmLenght, Height and weight.
+3. [Creation of curated time-series](creation_of_curated_timeseries/README.md) contains `*.m` scripts to do time alignment of data of 22 participants.
 
 ## Guidelines 
 1. Installation of software and its dependencies. See [README](installation-dependencies/README.md) for further details.
