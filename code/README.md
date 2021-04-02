@@ -1,9 +1,19 @@
 # Code
 
+## Content 
+1. [Anthropometrics](anthropometrics/README.md) contains scripts computes statistics for Participant, Gender, Age, Handeness, MusicTraining, RightArmLenght, Height and weight.
+
+## Guidelines 
 1. Installation of software and its dependencies. See [README](installation-dependencies/README.md) for further details.
 2. Demo 
 3. Provide a DOI link to the code (once is available)
 4. Software is under the license [Open Software License v. 3.0 (OSL-3.0)](OSL-3.0.md)
+
+
+
+## Notes.
+* Code has been tested by other persons but only by the main author.
+* R code was tested under Ubuntu 16.04x64 which might need to be refactored in users would like to use an updated version of Ubuntu or R.
 
 ```
 ~/Desktop/srep2020/code$ tree -d
