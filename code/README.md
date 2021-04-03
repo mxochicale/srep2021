@@ -17,8 +17,9 @@
 Code is under [Open Software Licence](OSL-3.0.md).
 
 ## Notes.
-* Code has been tested by other persons but only by the main author.
-* R code was tested under Ubuntu 16.04x64. That said, scripts which might need to be refactored if users would like to use them with the latests versions of Ubuntu and R.
+* Code has only been tested by main author by making sure [guidelines for code and data publication](../docs/submission/code-data/GuidelinesCodePublication.pdf) are addressed. 
+  However, if there are issues in the replication of the work please [open an issue](https://github.com/mxochicale/srep2021/issues)
+* R code was tested under Ubuntu 16.04x64. That said, scripts which might need to be refactored if users would like to use it with the latests versions of Ubuntu and R.
 
 ## Directories distribution in form of a tree
 ```
