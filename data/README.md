@@ -1,4 +1,15 @@
-# File organisation of data  
+# Data as datable files
+Datable files include 
+* curated [dataset](dataset/README.md) with a file size of 46MB,
+* [rqa](rqa/README.md) files for three participants and four windows length (each file is around ~26MB), 
+* [timeseries](timeseries/README.md) for a tidied interpolated raw data set, and 
+* [utde](utde/README.md) for embedding parameters to create uniform time delay embeddings (utde).   
+
+
+All files have the extension `*.dt` which stands for `datatable` files.
+
+
+## Organisation of data files
 ```
 ~/srep2020/data$ tree --si
 .

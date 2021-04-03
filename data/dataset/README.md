@@ -1,0 +1,10 @@
+# Datatable file for dataset
+## Preview of the content for `xdata_v00.dt` [44MB]
+```
+"Participant" "Activity" "Sensor" "Sample" "Time" "sg0zmuvGyroY" "sg1zmuvGyroY" "sg2zmuvGyroY" "sg0zmuvGyroZ" "sg1zmuvGyroZ" "sg2zmuvGyroZ"
+"p01" "HN" "HS01" 1 0 0.0110396263359954 0.00606430191548277 0.0385586376765087 0.00467559072085554 0.00509907428630649 0.168927517477539
+"p01" "HN" "HS01" 2 0.02 -0.00168219140460679 0.0118680450259069 0.0262438970359807 0.00652346272961699 0.00186480091449608 0.112819557516452
+"
+
+...
+```
