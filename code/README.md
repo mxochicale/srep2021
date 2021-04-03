@@ -1,15 +1,15 @@
 # Code
 ## Content 
-1. [Installation-dependencies](installation-dependencies/README.md) contains instructions on software versions and requirements for the current manuscript.
-2. [Anthropometrics](anthropometrics/README.md) contains scripts to compute statistics for Participant, Gender, Age, Handeness, MusicTraining, RightArmLenght, Height and weight.
-3. [Creation of curated time-series](creation_of_curated_timeseries/README.md) contains `*.m` scripts to do time alignment of data of 22 participants.
-4. [Libraries and functions](libraries_functions/README.md) contains instructions to install `nonlinearTseries` package and to call different R functions.
-5. [`R-scripts`](rscripts/README.md) contains scripts for time-series data creation. 
+1. [Installation-dependencies](installation-dependencies) contains instructions on software versions and requirements for the current manuscript.
+2. [Anthropometrics](anthropometrics) contains scripts to compute statistics for Participant, Gender, Age, Handeness, MusicTraining, RightArmLenght, Height and weight.
+3. [Creation of curated time-series](creation_of_curated_timeseries) contains `*.m` scripts to do time alignment of data of 22 participants.
+4. [Libraries and functions](libraries_functions) contains instructions to install `nonlinearTseries` package and to call different R functions.
+5. [`R-scripts`](rscripts) contains scripts for time-series data creation. 
    Similarly, it contains scripts for postprocessing of embedded parameters, reconstructed state spaces, recurrence plots, recurrence quantification analysis (RQAs) and 3D RQAs.
 
 ## Guidelines 
 1. Installation of software and its dependencies. See [README](installation-dependencies/README.md) for further details.
-2. See [README](rscripts/B_timeseries/README.md) for a demo on how to run R scripts that generate time-series data plots.    
+2. See [README](rscripts/B_timeseries) for a demo on how to run R scripts that generate time-series data plots.    
 3. Provide a DOI link to the code (once is available)
 4. Software is under the license [Open Software License v. 3.0 (OSL-3.0)](OSL-3.0.md)
 
