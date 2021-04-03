@@ -1,24 +1,16 @@
 # r-scripts
 
 ## Creating and setting up the raw data into aligned data
-
 1. Generate aligned data with `/A_mscripts/A_rawData_TO_TimeAlignedDataForSeparateActivities15_p01_to_p22_octave_linux.m`
 which creates this output path:
 `/home/map479/tmp/phdtmpdata/time_aligned_different_length_data_for_separate_activities_p01_to_p22_octave_linux`
-
-
-
-
+   
 ## Generating data.table files
 
 ```
-cd .../code_raw2aligned/B_rscripts-hri
+cd ~/B_rscripts
 R
 ```
-
-
-
-
 
 ## 2. Create 'TidiedInterpolatedData.datatable'
 `source(paste(getwd(),"/BA_creating_TidiedInterpolatedDATA_p01p22.R", sep=""), echo=TRUE)`
@@ -56,8 +48,6 @@ R
 6: -0.6333563 3.374851 1.436897
 
 ```
-
-
 
 `~/data/timeseries`
 ```

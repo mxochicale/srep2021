@@ -1,11 +1,10 @@
-Setting up paths for packages and functions
----
-The following lines are code extracs to call either 
+# Setting up paths for packages and functions
+The following lines are code snipes to call either 
 (i) nonlinearTseries packages or 
 (ii) different R functions.
 
-# nonlinearTseries 
-
+# Installing `nonlinearTseries` package
+Type the following instructions in the terminal to install nonlinearTseries package.
 ```
 ################################################################################
 # (0) Defining paths for main_path, r_scripts_path, ..., etc.
@@ -17,17 +16,13 @@ library(devtools)
 load_all(paste(github_repo_path, libfun_path, '/nonlinearTseries', sep=""))
 ```
 
+# Setting up `cao97` functions
+**NOTE1** Remember to source the `cao97_functions.R` and `cao97sub.so`  
+**NOTE2** github path is located in the Desktop path   
 
-# cao97 
-
-**NOTE1** Remember to source the `cao97_functions.R` and `cao97sub.so`
-**NOTE2** Becareful with github path as it is defined to be in the Desktop
-
-## cao97_functions.R
-
+## Setting up`cao97_functions.R`
 set up `cao97sub.so` 
 at `/code/libraries_functions/rfunctions/embedding_parameters/withCao1997/cao97_functions.R`
-
 
 ```
 #### Setting up paths
@@ -39,7 +34,7 @@ path_cao97sub_so <- '/code/libraries_functions/rfunctions/embedding_parameters/w
 
 
 
-# mutual information
+# Setting up mutual information functions
 ```
 cd $HOME/ ... /code/libraries_functions/rfunctions/embedding_parameters/mututalInformation 
 ./minfo datafile -b 100 -t 100 > r.mi
@@ -50,13 +45,9 @@ R
 ```
 
 
-
-
-
-
-# `extra_rqa.R`
-
-
+## Other R functions
+The following sections shows instructions on the settling up to use such functions  
+### `extra_rqa.R`
 ```
 ## LOADING FUNCTIONS
 #github_path <- getwd()
@@ -67,13 +58,7 @@ R
 #source( paste(github_repo_path, libfun_path, rfunctions_extra_rqa_R , sep='') )
 ```
 
-
-
-
-# `ollin_cencah.R` 
-
-
-
+### `ollin_cencah.R`
 ```
 github_repo_path <- getwd()
 libfun_path <- '/code/libraries_functions'
@@ -82,7 +67,3 @@ rfunctions_ollin_cencah_R <- '/rfunctions/ollin_cencah.R'
 ### Calling `functions_ollin_cencah` 
 source( paste(github_repo_path, libfun_path, rfunctions_ollin_cencah_R, sep='') )
 ```
-
-
-
-

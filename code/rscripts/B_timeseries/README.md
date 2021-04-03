@@ -1,12 +1,15 @@
+# `B_timeseries`
+Terminal outputs on Tue Feb 19 19:38:43 GMT 2019
 
-# figures output
-~/srep2019/docs/figures/timeseries/src 
+## Running script
+Open a terminal and copy/paste or type:
+```
+R
+source(  paste( getwd(), '/B_timeseries.R', sep=''), echo=TRUE )
+```
 
-
-
-# vertical/horizontal
-
-
+## Plotting vertical and horizontal arm movements
+Comment and uncomment the following lines to get plots for vertical or horizontal time-series data
 ```
 #################
 ####HORIZONTAL
@@ -28,14 +31,8 @@ data <- data[.(c('HN', 'HF'))]
 #movementtag <- 'V' 
 #setkey(data, Activity)
 #data <- data[.(c('VN', 'VF'))]
-#
-#
-
 ```
 
-
-added Tue Feb 19 19:38:43 GMT 2019
-
-
-
-
+## Figures path output
+The path for figure output is `~/srep2019/docs/figures/timeseries/src`.
+See figures [here](../../../docs/figures/timeseries/src).

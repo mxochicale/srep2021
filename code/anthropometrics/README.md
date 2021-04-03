@@ -1,16 +1,16 @@
-# 20 participants
+# Statistics for anthropometrics of 20 participants
 
+## CVS data
 ```
 datafilename <- 'data_20p.csv'
 ```
 
-
+## Running the script
 ```
 > source( paste( getwd(), '/computing_statistics.R' ,sep='' ), echo=TRUE )
 ```
 
-
-output
+## Terminal output
 ```
 
 > summary(all_pNNanthropometric)
@@ -37,8 +37,3 @@ output
 mean age: 19.8   SD age: 1.39924791829115
 
 ```
-
-
-
-
-
