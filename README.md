@@ -10,14 +10,14 @@ We applied nonlinear methods to the collected data to found visual differences i
 We conclude that Shannon Entropy with RQA is a robust method that helps to quantify activities, types of sensors, windows lengths and level of smoothness.
 Hence this work might enhance the development of better diagnostic tools for applications in rehabilitation and sport science for skill performance or new forms of human-humanoid interaction for quantification of movement adaptations and motor pathologies.
 
-## Pre-print of the manuscript* 
+## Manuscript* 
 [![GitHub Actions Status](https://github.com/mxochicale/srep2021/workflows/Compiling-TeX-Manuscript/badge.svg)](https://github.com/mxochicale/srep2021/actions) [![manuscript](https://img.shields.io/badge/Read-manuscript-blue.svg)](https://github.com/mxochicale/srep2021/blob/pdfs/manuscript.pdf)   
-*Manuscript is 100% reproducible work with available code, data, tex and CI-github action [free-cortex framework](https://github.com/free-cortex/framework)).
+*Manuscript is 100% reproducible work meaning that code, data, tex project and CI-github action with [free-cortex framework](https://github.com/free-cortex/framework)) is open accessible.
 
 ## Code and data
 Guidelines and instructions to reproduce the results of manuscript are available in the following paths: [code](code/) and [data](data/).
 
-## Pre-print in  arXiv and papers with code links
+## Pre-print in arXiv and papers with code
 * https://arxiv.org/abs/1810.09249
 * https://paperswithcode.com/paper/nonlinear-methods-to-quantify-movement
 
