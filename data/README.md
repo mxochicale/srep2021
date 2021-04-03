@@ -1,7 +1,7 @@
 # Data as datable files
 Datable files include 
 * curated [dataset](dataset) with a file size of 46MB,
-* [rqa](rqa/README.md) files for three participants and four windows length (each file is around ~26MB), 
+* [rqa](rqa/) files for three participants and four windows length (each file is around ~26MB), 
 * [timeseries](timeseries) for a tidied interpolated raw data set, and 
 * [utde](utde) for embedding parameters to create uniform time delay embeddings (utde).   
 
