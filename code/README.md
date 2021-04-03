@@ -13,11 +13,14 @@
 3. Provide a DOI link to the code (once is available)
 4. Software is under the license [Open Software License v. 3.0 (OSL-3.0)](OSL-3.0.md)
 
+## Licence
+Code is under [Open Software Licence](OSL-3.0.md).
+
 ## Notes.
 * Code has been tested by other persons but only by the main author.
 * R code was tested under Ubuntu 16.04x64. That said, scripts which might need to be refactored if users would like to use them with the latests versions of Ubuntu and R.
 
-## Path tree
+## Directories distribution in form of a tree
 ```
 ~/Desktop/srep2020/code$ tree -d
 .
