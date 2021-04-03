@@ -15,6 +15,7 @@ Hence this work might enhance the development of better diagnostic tools for app
 *Manuscript is 100% reproducible work meaning that code, data, tex project and CI-github action with [free-cortex framework](https://github.com/free-cortex/framework)) is open accessible.
 
 ## Code and data
+[![DOI](https://zenodo.org/badge/158121346.svg)](https://zenodo.org/badge/latestdoi/158121346)   
 Guidelines and instructions to reproduce the results of manuscript are available in the following paths: [code](code/) and [data](data/).
 
 ## Pre-print in arXiv and papers with code
@@ -26,7 +27,7 @@ The work of this manuscript is under Creative Commons Attribution-ShareAlike 4.0
 Hence, you are free to reuse it and modify it as much as you want and as long as you cite [this manuscript](https://github.com/mxochicale/srep2021) as original reference and you re-share your work under the same terms.
 [CC-BY-SA.md](CC-BY-SA.md) was downloaded from [Creative Commons Markdown](https://github.com/idleberg/Creative-Commons-Markdown).
 
-## BibTeX
+## BibTeX for pre-print in arXiv
 ```
 @misc{xochicale2021,
       title={	Nonlinear methods to quantify Movement Variability 
@@ -36,6 +37,22 @@ Hence, you are free to reuse it and modify it as much as you want and as long as
       eprint={1810.09249},
       archivePrefix={arXiv},
       primaryClass={eess.SP}
+}
+```
+
+## BibTex for code and data in Zenodo
+```
+@software{miguel_xochicale_2021_4661227,
+  author       = {Miguel Xochicale},
+  title        = {{Code and data for "Nonlinear methods to quantify 
+                   Movement Variability in Human-Humanoid Interaction
+                   Activities"}},
+  month        = apr,
+  year         = 2021,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.4661227},
+  url          = {https://doi.org/10.5281/zenodo.4661227}
 }
 ```
 
