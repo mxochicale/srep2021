@@ -1,5 +1,5 @@
 # Nonlinear methods to quantify Movement Variability in Human-Humanoid Interaction Activities
-*Miguel Xochicale and Chris Baber* 
+*Xochicale Miguel and Baber Chris* 
 
 ## Abstract 
 Human movement variability arises from the process of mastering redundant (bio)mechanical degrees of freedom to successfully accomplish any given motor task where flexibility and stability of many possible joint combinations helps to adapt to environment conditions.
@@ -10,13 +10,14 @@ We applied nonlinear methods to the collected data to found visual differences i
 We conclude that Shannon Entropy with RQA is a robust method that helps to quantify activities, types of sensors, windows lengths and level of smoothness.
 Hence this work might enhance the development of better diagnostic tools for applications in rehabilitation and sport science for skill performance or new forms of human-humanoid interaction for quantification of movement adaptations and motor pathologies.
 
-## Manuscript 
-[![GitHub Actions Status](https://github.com/mxochicale/srep2021/workflows/Compiling-TeX-Manuscript/badge.svg)](https://github.com/mxochicale/srep2021/actions) [![manuscript](https://img.shields.io/badge/read-manuscript-blue.svg)](https://github.com/mxochicale/srep2021/blob/pdfs/manuscript.pdf) (Manuscript is 100% reproducible with the use of [free-cortex framework](https://github.com/free-cortex/framework)).
+## Pre-print of the manuscript* 
+[![GitHub Actions Status](https://github.com/mxochicale/srep2021/workflows/Compiling-TeX-Manuscript/badge.svg)](https://github.com/mxochicale/srep2021/actions) [![manuscript](https://img.shields.io/badge/Read-manuscript-blue.svg)](https://github.com/mxochicale/srep2021/blob/pdfs/manuscript.pdf)   
+*Manuscript is 100% reproducible work with available code, data, tex and CI-github action [free-cortex framework](https://github.com/free-cortex/framework)).
 
 ## Code and data
 Guidelines and instructions to reproduce the results of manuscript are available in the following paths: [code](code/README.md) and [data](data/README.md).
 
-## arXiv and papers with code links
+## Pre-print in  arXiv and papers with code links
 * https://arxiv.org/abs/1810.09249
 * https://paperswithcode.com/paper/nonlinear-methods-to-quantify-movement
 
@@ -25,7 +26,7 @@ The work of this manuscript is under Creative Commons Attribution-ShareAlike 4.0
 Hence, you are free to reuse it and modify it as much as you want and as long as you cite [this manuscript](https://github.com/mxochicale/srep2021) as original reference and you re-share your work under the same terms.
 [CC-BY-SA.md](CC-BY-SA.md) was downloaded from [Creative Commons Markdown](https://github.com/idleberg/Creative-Commons-Markdown).
 
-## BibTeX to cite
+## BibTeX
 ```
 @misc{xochicale2021,
       title={	Nonlinear methods to quantify Movement Variability 
@@ -39,5 +40,5 @@ Hence, you are free to reuse it and modify it as much as you want and as long as
 ```
 
 ## Contact
-If you have specific questions about the content of this repository, you can contact [Miguel Xochicale](mailto:perez.xochicale@gmail.com?subject="[srep2021]").  
-If your question might be relevant to other people, please instead [open an issue](https://github.com/mxochicale/srep2021/issues)
+For specific questions about the content of this repository, please contact [Miguel Xochicale](mailto:perez.xochicale@gmail.com?subject="[srep2021]").
+If your question might be relevant to other people, please instead [open an issue](https://github.com/mxochicale/srep2021/issues).
