@@ -3,13 +3,13 @@
 ## Scripts for time and length alignment of rawdata
 It is suggested to start with `A_mscripts` path and then follow up with `B_rscripts`.
 * `A_mscripts` path
-See [README](code_raw2aligned/A_mscripts/README.md) for instructions on how to do time alignment of time series for 22 participants.
+See [README](code_raw2aligned/A_mscripts/) for instructions on how to do time alignment of time series for 22 participants.
 You might also be interested in checking [few notes](code_raw2aligned/A_mscripts/MATLAB_TO_OCTAVE_MIGRATION.md) on the migration from matlab to octave.
   
 *  `B_rscripts` 
-See [README](code_raw2aligned/B_rscripts/README.md) for instruction on how to generate R data tables for further post-processing.
+See [README](code_raw2aligned/B_rscripts/) for instruction on how to generate R data tables for further post-processing.
 Bare in mind that such conversation of data requires to setup the right paths for your data curation.
-Having said that, [data tables](../../data/README.md) has been added in the repository.  
+Having said that, [data tables](../../data/) has been added in the repository.  
 
 ## Raw data of 22 participants
 Considering participant 01 , e.g. `p01`, data of raw time-seres for 22 participants is organised as follows:
