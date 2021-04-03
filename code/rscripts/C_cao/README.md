@@ -1,16 +1,19 @@
-# cao
+# Computing embedding dimensions with CAO algorithm
 
-## `> source(paste(getwd(), "/B_cao.R", sep=""), echo=TRUE)`
+## [`B_cao.R`](B_cao.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(paste(getwd(), "/B_cao.R", sep=""), echo=TRUE)
+```
 
-
-
+* Commenting/uncommenting lines for types of activities and window length
 ```
 ##########################
 ## (4.2.1) Activities Selection
 #movement_variables <- c('HN','HF')
 #movement_variables <- c('VN','VF')
 movement_variables <- c('HN', 'HF', 'VN', 'VF')
-
 ```
 
 
@@ -19,14 +22,11 @@ movement_variables <- c('HN', 'HF', 'VN', 'VF')
 #### one window lenght
 windowsl <- c(500)
 windowsn <- c('w10')
-
 ```
 
 
-computation time for time series with 100sample window
+* Computation time
 ```
-
-
 > #################
 > # Stop the clock!
 > end.time <- Sys.time()
@@ -36,8 +36,7 @@ Time difference of 15.31478 mins
 ```
 
 
-files at `~/srep2019/data/utde` 
-
+* Files at [`~/srep2019/data/utde`](../../../data/utde)
 
 ```
 6.0M Feb 19 22:01 EE-w10.dt
@@ -46,9 +45,14 @@ files at `~/srep2019/data/utde`
 ```
 
 
+## [`CA_cao_mm_H.R`](CA_cao_mm_H.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(paste(getwd(), "/CA_cao_mm_H.R", sep=""), echo=TRUE)
+```
 
-## `> source(paste(getwd(), "/CA_cao_mm_H.R", sep=""), echo=TRUE)`
-
+* Commenting/uncommenting lines for types of activities and window length
 ```
 #acts <- 'H'
 #windowl<-'w2'
@@ -69,26 +73,28 @@ wdata <- fread('MED-w10.dt', header=TRUE)
 ```
 
 
-
-
+* Computation time
+```
 > end.time - start.time
 Time difference of 0.8402872 secs
+```
 
 
-
+* Files at [`~/srep2019/data/utde`](../../../data/utde)
 ```
 8.3K Feb 20 11:27 aMED-H-w10.dt
 
 ```
 
-at /srep2019/data/utde
 
+## [`CB_cao_mm_V.R`](CB_cao_mm_V.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(paste(getwd(), "/CB_cao_mm_V.R", sep=""), echo=TRUE)
+```
 
-
-
-## `> source(paste(getwd(), "/CB_cao_mm_V.R", sep=""), echo=TRUE)`
-
-comment and uncomment the following lines of code
+* Comment and uncomment the following lines of code
 ```
 #acts <- 'V'
 #windowl<-'w2'
@@ -109,29 +115,31 @@ wdata <- fread('MED-w10.dt', header=TRUE)
 ```
 
 
-
+* Computation time
 ```
 > end.time - start.time
 Time difference of 0.6102109 secs
 ```
 
 
-
-
+* Files at [`~/srep2019/data/utde`](../../../data/utde)
 ```
 8.3K Feb 20 11:27 aMED-V-w10.dt
-
 ```
 
-at /srep2019/data/utde
 
 
 
 
-## `> source(paste(getwd(), "/EA_plotcao_avMED_H.R", sep=""), echo=TRUE)`
-
+## [`EA_plotcao_avMED_H.R`](EA_plotcao_avMED_V.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(paste(getwd(), "/EA_plotcao_avMED_H.R", sep=""), echo=TRUE)
 ```
 
+* Comment and uncomment the following lines of code
+```
 #
 #windowl<-'w2'
 #aMED <- fread('aMED-H-w2.dt', header=TRUE)
@@ -146,18 +154,26 @@ aMED <- fread('aMED-H-w10.dt', header=TRUE)
 
 #windowl<-'w15'
 #aMED <- fread('aMED-H-w15.dt', header=TRUE)
+```
 
 
+* Computation time
 ```
 > end.time - start.time
 Time difference of 0.7096527 secs
+```
 
 
 
+## [`EB_plotcao_avMED_V.R`](EB_plotcao_avMED_V.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(paste(getwd(), "/EB_plotcao_avMED_V.R", sep=""), echo=TRUE)
+```
 
-## `> source(paste(getwd(), "/EB_plotcao_avMED_V.R", sep=""), echo=TRUE)`
 
-
+* Comment and uncomment the following lines of code
 ```
 #windowl<-'w2'
 #aMED <- fread('aMED-V-w2.dt', header=TRUE)
@@ -176,13 +192,14 @@ aMED <- fread('aMED-V-w10.dt', header=TRUE)
 
 ```
 
+* Computation time
+```
 > end.time - start.time
 Time difference of 0.7334752 secs
+```
 
-
-## images files
-
-
+## Images files
+Generated images from the above scripts are available [here](../../../docs/figures/caoami/src)
 
 ```
 /srep2019/docs/figures/caoami/src$ tree -s
@@ -198,5 +215,3 @@ Time difference of 0.7334752 secs
 
 0 directories, 8 files
 ```
-
-

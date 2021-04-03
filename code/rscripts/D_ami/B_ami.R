@@ -9,7 +9,7 @@
 #
 ###############################################################################	
 	# TABLE OF CONTENT:
- 	# (0) Definifing paths 
+ 	# (0) Defining paths
 	# (1) Loading libraries and functions
 	# (2) Reading data
 	
@@ -22,8 +22,8 @@
 			# (4.2.4) Axis Selection
 
 	# (5) Average Mutual Information 
-		# (5.1) Plot Avarage Mutual Information 
-		# (5.2) Creating and Changing to Preprosseced Data Path
+		# (5.1) Plot Average Mutual Information
+		# (5.2) Creating and Changing to Pre-processed Data Path
 
 
 

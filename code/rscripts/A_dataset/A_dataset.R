@@ -8,7 +8,7 @@
 #
 ###############################################################################	
 	# OUTLINE:
- 	# (0) Definifing paths 
+ 	# (0) Defining paths
 	# (1) Loading libraries and functions
 	# (2) Reading raw tidied interpolated data
 	# (3) Creating paths

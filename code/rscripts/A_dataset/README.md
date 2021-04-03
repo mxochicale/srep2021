@@ -1,8 +1,14 @@
+# `A_datasets`
+Terminal outputs on Tue Feb 19 18:52:44 GMT 2019
 
+## Running script
+Open a terminal and copy/paste or type:
+```
+R
+source(  paste( getwd(), '/A_dataset.R', sep=''), echo=TRUE )
+```
 
-
-# Tue Feb 19 18:52:44 GMT 2019
-
+## Times for generating tables of time-series data
 ```
 # add time variable
 xdata[, Time:=Sample/50, ]
@@ -12,17 +18,18 @@ xdata[, Time:=Time-0.02, ]
 setcolorder(xdata, c(1:4, 11, 5:10))
 ```
 
-
 ```
 > end.time - start.time
 Time difference of 32.53468 secs
 ```
 
+## Table size file and CVS output
+* File size
 ```
 44M Feb 19 21:52 xdata_v00.dt
 ```
 
-
+* CVS 
 ```
 > xpa
         Participant Activity Sensor Sample  Time sg0zmuvGyroY sg1zmuvGyroY
@@ -49,7 +56,4 @@ Time difference of 32.53468 secs
 325660:  0.036071088 -0.026827876 -0.022947925  -0.02397686
 325661:  0.036522904 -0.028500658 -0.022825249  -0.02417699
 325662:  0.037008499 -0.018546079 -0.023017394  -0.02439715
-
 ```
-
-

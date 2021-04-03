@@ -1,14 +1,13 @@
-# ami
+# Average Mutual Information to compute delay embeddings
 
-## todo
+## [`B_ami.R`](B_ami.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(paste(getwd(),"/B_ami.R", sep=""), echo=TRUE)
+```
 
-* [ ] automatically select the window
-
-Fri 31 Aug 13:42:24 BST 2018
-
-
-## `source(paste(getwd(),"/B_ami.R", sep=""), echo=TRUE)`
-
+* Commenting/uncommenting lines for types of activities and window length
 ```
 ######################################
 ## w2, 2-second window (100 samples) ## 100 to 200
@@ -36,21 +35,27 @@ windowltag <- 'w10'
 ```
 
 
+* Computation time
 ```
 > end.time - start.time
 Time difference of 10.43898 secs
 ```
 
+* Files at [`~/srep2019/data/utde`](../../../data/utde)
 ```
 4.9M Oct 16 18:48 AMI-w10.dt
 34K Oct 16 18:48 MTD-w10.dt
 ```
-at `/home/ai/github/phd-thesis-code-data/data-outputs/utde/minimum_embedding_parameters/ami/v05` 
 
 
+## [`CA_plotamiH.R`](CA_plotamiH.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(paste(getwd(),"/CA_plotamiH.R", sep=""), echo=TRUE)
+```
 
-## `source(paste(getwd(),"/CA_plotamiH.R", sep=""), echo=TRUE)`
-
+* Commenting/uncommenting lines for types of activities and window length
 ```
 #AMI <- fread('AMI-w2.dt', header=TRUE)
 #MTD <- fread('MTD-w2.dt', header=TRUE)
@@ -74,17 +79,20 @@ windowl<-'w10'
 #
 ```
 
-
-
+* Computation time
 ```
 > end.time - start.time
 Time difference of 2.365328 secs
 ```
 
- 
-## `source(paste(getwd(),"/CB_plotamiV.R", sep=""), echo=TRUE)`
+## [`CB_plotamiV.R`](CB_plotamiV.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(paste(getwd(),"/CB_plotamiV.R", sep=""), echo=TRUE)
+```
 
-
+* Commenting/uncommenting lines for types of activities and window length
 ```
 #AMI <- fread('AMI-w2.dt', header=TRUE)
 #MTD <- fread('MTD-w2.dt', header=TRUE)
@@ -109,16 +117,14 @@ windowl<-'w10'
 #
 ```
 
-
+* Computation time
 ```
 > end.time - start.time
 Time difference of 0.7130244 secs
 ```
 
-
-
-## plots output
-
+## Image files
+Generated images from the above scripts are available [here](../../../docs/figures/caoami/src)
 
 ```
 /srep2019/docs/figures/caoami/src$ tree -s
@@ -143,3 +149,6 @@ Time difference of 0.7130244 secs
 0 directories, 16 files
 ```
 
+## TODO
+* automatically select the window  
+added: Fri 31 Aug 13:42:24 BST 2018  

@@ -1,9 +1,13 @@
-# Rscripts 
+# Scripts to compute and to plot 3D Recurrence Quantification Analysis
 
+## [`0_rqa_test.R`](0_rqa_test.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(  paste( getwd(), '/0_rqa_test.R', sep=''), echo=TRUE )
+```
 
-## `source(  paste( getwd(), '/0_rqa_test.R', sep=''), echo=TRUE )`
-
-3D plot for one participant and one axis
+* Commenting/uncommenting lines for types of activities and window length
 ```
 ##########################
 ##### one window lenght
@@ -11,9 +15,14 @@ windowsl <- c(100)
 windowsn <- c('w2')
 ```
 
+## [`A_3Drqa_datatable.R`](A_3Drqa_datatable.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(  paste( getwd(), '/A_3Drqa_datatable.R', sep=''), echo=TRUE )
+```
 
-## `source(  paste( getwd(), '/A_3Drqa_datatable.R', sep=''), echo=TRUE )`
-
+* Commenting/uncommenting lines for types of activities and window length
 ```
 #
 #file_ext <- paste('RQAs_p01w100.dt',sep='')
@@ -46,25 +55,21 @@ W <- fread( file_ext, header=TRUE)
 ```
 
 
-
+* Computation time
 ```
-
 > end.time - start.time
 Time difference of 3.418769 hours
-
 ```
 
-
+* Output of data table 
 ```
-
 /srep2019/data/rqa$ tree -s
 .
 ├── [   26043425]  RQAs_p03w500.dt
-
 ```
 
 
-
+* Window length and computation time
 ```
 windowsl <- c(100)
 windowsn <- c('w2')
@@ -77,7 +82,7 @@ Time difference of 22.43518 mins
 ```
 
 
-
+* Window length and computation time
 ```
 windowsl <- c(250)
 windowsn <- c('w5')
@@ -88,44 +93,16 @@ Time difference of 50.06543 mins
 ├── [   25682915]  RQAs_p03w250.dt
 ```
 
-
-
-
-
-
+* Window length and participant number
 ```
-
 windowsl <- c(100,250,500)
 windowsn <- c('w2', 'w5', 'w10')
 		pNN <- c('p01')
 ```
 
-
+* Running times: 
 ```
-                                        epsilon_k: 3
-#### axis:sg2zmuvGyroZ
->> Embedding parameters:  m=1 tau=1
-                                        epsilon_k: 0.2
-                                        epsilon_k: 0.3
-
-                                        epsilon_k: 3
-Error in rbindlist(l, use.names, fill, idcol) : 
-  Answer requires 30 columns whereas one or more item(s) in the input list 
-has only 19 columns. This could be because the items in the list may not 
-all have identical column names or some of the items may have duplicate names. 
-In either case, if you're aware of this and would like to fill those missing columns, set the argument 'fill=TRUE'.
-```
-Sat 23 Mar 07:47:02 GMT 2019
-
-
-
-
-
-
-* run A for "p03w750" on Sun 26 Apr 12:47:39 BST 2020
-
-
-```
+#run A for "p03w750" on Sun 26 Apr 12:47:39 BST 2020
 windowsl <- c(750)
 windowsn <- c('w15')
 ...
@@ -137,15 +114,14 @@ windowsn <- c('w15')
 				)]
 
 ```
-
+```
 start: Sun 26 Apr 12:54:40 BST 2020
-
-
 > end.time - start.time
 Time difference of 5.656155 hours
+```
 
-
-
+* Running times: 
+```
 * run A for "p01w250" on Sun 26 Apr 21:09:32 BST 2020
 Time difference of 27.29116 mins
 
@@ -154,13 +130,13 @@ Time difference of 1.860006 hours
 
 * run A for "p01w750" started on Tue 28 Apr 17:16:44 BST 2020
 Time difference of 5.526684 hours
+```
 
-
-
+* Running times: 
+```
 * run A for "p02w100" started on 
 Wed 29 Apr 13:33:29 BST 2020
 Time difference of 10.69237 mins
-
 
 * run A for "p02w750" started on 
 Wed 29 Apr 17:50:18 BST 2020
@@ -170,11 +146,12 @@ Wed 29 Apr 17:50:18 BST 2020
 Thu 30 Apr 17:30:53 BST 2020
 Time difference of 1.812537 hours
 
-
 * run A for "p02w250" started on 
 Thu 30 Apr 21:54:31 BST 2020
 Time difference of 37.14682 mins
+```
 
+* Files at [`~/srep2019/data/rqa`](../../../data/rqa)
 ```
 /srep2019/data/rqa$ tree -D
 .
@@ -195,12 +172,15 @@ Time difference of 37.14682 mins
 0 directories, 13 files
 ```
 
+## [`C_3Drqa_plots_epsilons.R`](C_3Drqa_plots_epsilons.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+> source(  paste( getwd(), '/C_3Drqa_plots_epsilons.R', sep=''), echo=TRUE )
+```
 
 
-## `> source(  paste( getwd(), '/C_3Drqa_plots_epsilons.R', sep=''), echo=TRUE )`
-
-
-lines to tweak
+* Commenting/uncommenting lines for types of metric and window length
 ```
 rqas <- c('ENTR')
 
@@ -232,7 +212,8 @@ selectWindow <- 'w250'
 selectActivity <- 'Horizontal'; activities <- c('HN','HF'); axis <- c('sg0zmuvGyroZ', 'sg1zmuvGyroZ', 'sg2zmuvGyroZ')
 ```
 
-output paths
+## Output image files
+Generated images from the above scripts are available [here](../../../docs/figures/rqa/src/3drqa_epsilons)
 ```
 ~/srep2019/docs/figures/rqa/src/3drqa_epsilons$ tree -d
 .
@@ -262,15 +243,16 @@ output paths
 └── p03-w750-Vertical
 
 24 directories
-
 ```
 
+## [`D_3Drqa_plots_sensors_activities.R`](D_3Drqa_plots_sensors_activities.R)
+* Run script by opening a terminal and copying/pasting or typing:
+```
+R
+source(  paste( getwd(), '/D_3Drqa_plots_sensors_activities.R', sep=''), echo=TRUE )
+```
 
-
-
-## `source(  paste( getwd(), '/D_3Drqa_plots_sensors_activities.R', sep=''), echo=TRUE )`
-
-
+* Commenting/uncommenting lines for types of activities and window length
 ```
 	## (4.2.1) Activities Selection
 	#activities <- c('HN','HF')
@@ -281,14 +263,12 @@ output paths
 				#axis <- c('sg0zmuvGyroZ', 'sg1zmuvGyroZ', 'sg2zmuvGyroZ')
 				axis <- c('sg0zmuvGyroY', 'sg1zmuvGyroY', 'sg2zmuvGyroY')
 
-
 ```
 
-
-
+## Output images files
+Generated images from the above scripts are available [here](../../../docs/figures/rqa/src/3drqa_sensors_activities)
 ```
 ~/srep2019/docs/figures/rqa/src/3drqa_sensors_activities$ tree -s
-
 .
 ├── [     359294]  w500_ENTR_HS01_HF_sg0zmuvGyroZ_eps_1.png
 ├── [     372114]  w500_ENTR_HS01_HF_sg1zmuvGyroZ_eps_1.png
@@ -318,8 +298,19 @@ output paths
 0 directories, 24 files
 ```
 
+## Issues
+* Reported on Sat 23 Mar 07:47:02 GMT 2019
+```
+                                        epsilon_k: 3
+#### axis:sg2zmuvGyroZ
+>> Embedding parameters:  m=1 tau=1
+                                        epsilon_k: 0.2
+                                        epsilon_k: 0.3
 
-
-
-
-
+                                        epsilon_k: 3
+Error in rbindlist(l, use.names, fill, idcol) : 
+  Answer requires 30 columns whereas one or more item(s) in the input list 
+has only 19 columns. This could be because the items in the list may not 
+all have identical column names or some of the items may have duplicate names. 
+In either case, if you're aware of this and would like to fill those missing columns, set the argument 'fill=TRUE'.
+```
