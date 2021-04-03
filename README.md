@@ -15,7 +15,7 @@ Hence this work might enhance the development of better diagnostic tools for app
 *Manuscript is 100% reproducible work with available code, data, tex and CI-github action [free-cortex framework](https://github.com/free-cortex/framework)).
 
 ## Code and data
-Guidelines and instructions to reproduce the results of manuscript are available in the following paths: [code](code/README.md) and [data](data/README.md).
+Guidelines and instructions to reproduce the results of manuscript are available in the following paths: [code](code/) and [data](data/).
 
 ## Pre-print in  arXiv and papers with code links
 * https://arxiv.org/abs/1810.09249
