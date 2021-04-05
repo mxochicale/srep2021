@@ -10,6 +10,7 @@ TEXFILE = $(basename $(ALLTEX))
 # TEXFILE = main
 LATEX = pdflatex -shell-escape -interaction=nonstopmode -file-line-error
 BIB = bibtex
+EVINCE = evince
 
 all:
 	$(LATEX) $(TEXFILE).tex
@@ -21,7 +22,6 @@ all:
 	@echo "================================================"
 	@echo "All done! pdf file has been created. "
 	@echo "================================================"
-	evince $(TEXFILE).pdf &
 
 clean:
 	rm -f *.aux *.blg *.bbl *.log *.out *.pdf 
@@ -30,5 +30,5 @@ clean:
 	@echo "All cleaned!  "
 	@echo "================================================"
 
-	
-	
+view:
+	$(EVINCE) $(TEXFILE).pdf	

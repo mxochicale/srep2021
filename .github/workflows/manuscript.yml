@@ -3,7 +3,8 @@ on:
   push:
     branches:
       - no-main
-      - 05-latex-action 
+      - 05-latex-action
+      - 13-quality-check
 
 jobs:
   build:
