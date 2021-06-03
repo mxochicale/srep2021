@@ -273,7 +273,7 @@ RP is also characterised with a line of identity (LOI) which is a diagonal line 
 %*******************************************************************************
 \subsection*{Structures of Recurrence Plots}
 Pattern formations in the RPs can be designated either as topology for large-scale patterns or texture for small-scale patterns.
-In the case of topology, the following pattern formations are commonly presented: (i) homogeneous where uniform recurrence points are spread in the RP e.g., uniformly distributed noise (Fig~\ref{fig01}c3), (ii) periodic and quasi-periodic systems where diagonal lines and checkerboard structures represent oscillating systems, e.g., sinusoidal signals (Fig~\ref{fig01}c4), (iii) drift where paling or darkening recurrence points away from the LOI is caused by drifting systems, e.g., logistic map (Fig~\ref{fig01}c5), and (iv) disrupted where recurrence points are presented white areas or bands that indicate abrupt changes in the dynamics, e.g. Brownian motion (Fig~\ref{fig01}c7) \cite{eckmann1987, marwan2015}.
+In the case of topology, the following pattern formations are commonly presented: (i) homogeneous where uniform recurrence points are spread in the RP e.g., uniformly distributed noise (Fig~\ref{fig01}c3), (ii) periodic and quasi-periodic systems where diagonal lines and checkerboard structures represent oscillating systems, e.g., sinusoidal signals (Fig~\ref{fig01}c4), (iii) drift where paling or darkening recurrence points away from the LOI is caused by drifting systems, e.g., logistic map (Fig~\ref{fig01}c5), and (iv) disrupted where recurrence points are presented white areas or bands that indicate abrupt changes in the dynamics, e.g. Brownian motion (Fig~\ref{fig01}c6) \cite{eckmann1987, marwan2015}.
 Texture patterns in RPs can be categorised as: (i) single or isolated recurrence points that represent rare occurring states, and do not persist for any time or fluctuate heavily, (ii) dots forming diagonal lines where the length of the small-scale parallel lines in the diagonal are related to the ratio of determinism or predictability in the dynamics of the system, and (iii) dots forming vertical and horizontal lines where the length of the lines represent a time length where a state does not change or change very slowly and these patterns formation represent discontinuities in the signal, and (iv) dots clustering to inscribe rectangular regions which are related to laminar states or singularities \cite{marwan2015}.
 
 Although, each of the previous pattern descriptions of the structures in the RP offer an idea of the characteristics of dynamical systems, these might be misinterpreted and conclusions might tend to be subjective as these require the interpretation of a particular researcher(s).
@@ -405,9 +405,9 @@ With that in mind, this work explores the sensitivity and robustness of the wind
 %*******************************************************************************
 %*******************************************************************************
 \section*{Experiment} \label{sec:experiment}
-We conducted an experiment in the context of human-humanoid imitation (HHI) activities where participants were asked to imitate simple horizontal and vertical arm movements performed by NAO, a humanoid robot \cite{gouaillier2009}.
+We conducted an experiment in the context of human-humanoid imitation (HHI) activities where participants were asked to imitate simple horizontal (Figure~\ref{fig02}a1) and vertical arm movements (Figure~\ref{fig02}a3) performed by NAO, a humanoid robot (Figure~\ref{fig02}a2,~\ref{fig02}a4) \cite{gouaillier2009}.
 Such simple movements were repeated ten times for the participant who copied NAO's arm movements in a face-to-face imitation activity.
-Also, wearable inertial measurement unit (IMU) sensors were attached to the right hand of the participant and to the left hand of the robot (Figure~\ref{fig02}a1,a3).
+Also, wearable inertial measurement unit (IMU) sensors were attached to the right hand of the participant and to the left hand of the robot (Figures~\ref{fig02}a1,~\ref{fig02}a3).
 Data were then collected with four NeMEMSi IMU sensors with sampling rate of 50Hz provinding tri-axial data of the accelerometer, gyroscope and magnetometer sensors and quaternions \cite{Comotti2014}.
 %%---------------------------------(FIGURE)-------------------------------------
 \begin{figure}[ht]
@@ -434,13 +434,18 @@ With that in mind, data for twenty participants were analysed in this work.
 Of the twenty participants, all of them are right-handed healthy participants of whom four are females and sixteen are males with a mean and standard deviation (SD) age of mean=19.8 (SD=1.39).
 
 \subsection*{Ethics}
-All participants provided informed consent forms prior to participation in the experiment. Hence, the experiments were conducted in November 2016 and participants confirmed reading and understanding the participant information sheet of the experiments and were able to withdraw from the experiment at any time without giving any reason.
-The design of the experiments adhered to the University of Birmingham regulations, data were anonymised and videos were stored only on a personal computer in accordance with the Data Protection Act 1998.
+All participants provided informed consent forms prior to participation in the experiment. 
+Hence, the experiments were conducted in November 2016 and participants confirmed reading and understanding the participant information sheet of the experiments and were able to withdraw from the experiment at any time without giving any reason.
+The design of the experiments adhered to the University of Birmingham guidelines and regulations for experiments with humans that includes: participant information sheet, checklist of the experiment and anonymised data collection in accordance with the Data Protection Act 1998.
+All data in this study were anonymised and videos were stored only on a personal computer.
+
+A review of the way in which the project was conducted was undertaken by the Head of Research Governance at the University of Birmingham. 
+An ethics position statement was prepared to confirm that ethical issues for this project were considered sufficiently to allow data from this project to be used for the research (ERN 21-0774).
+This was approved in line with University processes.
 %Refer to Appendix D for further information about the ethics, online participation information sheets and experiment check list.
 
-
 \subsection*{Human-humanoid imitation activities}
-For human-humanoid imitation (HHI) activities four neMEMSi sensors were used, two of which were attached to the right hand of the participant and the other two to the left hand of the humanoid robot.
+For human-humanoid imitation (HHI) activities four neMEMSi sensors were used, two of which were attached to the right hand of the participant and the other two to the left hand of the humanoid robot (Figure~\ref{fig02}A).
 Then, each participant was asked to imitate repetitions of simple horizontal and vertical arm movements performed by the humanoid robot in the following conditions:
 (i) ten repetitions of horizontal arm movement at normal (HN) and faster (HF) speed (Figure~\ref{fig02}a1), and
 (ii) ten repetitions of vertical arm movement at normal (VN) and faster (VF) speed (Figure~\ref{fig02}a3).

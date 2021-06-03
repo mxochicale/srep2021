@@ -1,8 +1,14 @@
 # LaTeX manuscript
 
-## Build latex report
+## Build local tex 
+[local-tex-build.sh](local-tex-build.sh) clean, make and view manuscript by running:
 ```
-make
+sh local-tex-build.sh
+```
+
+## clean latex report
+```
+make clean
 ```
 
 ## Reduce PDF file size
@@ -10,7 +16,4 @@ make
 sh reduce-pdf-size.sh
 ```
 
-## clean latex report
-```
-make clean
-```
+``
