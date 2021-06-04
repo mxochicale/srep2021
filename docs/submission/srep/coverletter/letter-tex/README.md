@@ -17,6 +17,7 @@ about the work described in your manuscript.
 * http://blogs.nature.com/methagora/2013/09/how-to-write-a-cover-letter.html
 
 
+
 ## Latex Templates
 https://www.latextemplates.com/template/plain-cover-letter
 
