@@ -5,6 +5,7 @@ on:
       - no-main
       - 05-latex-action
       - 13-quality-check
+      - 15-new-submission
 
 jobs:
   build:
