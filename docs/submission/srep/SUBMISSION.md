@@ -81,3 +81,25 @@ Applied mathematics
 * Access tools to improve your manuscript
 
 
+
+# Re-submission 
+
+## Upload manuscript
+Remove and upload manuscript
+
+## Details
+Replace title and abstract from the branch and main.tex file
+Upload cover letter as PDF file.
+
+## Authors
+Double check author names and afilations
+
+## Subjects
+Double check subjects
+
+## Declarations
+Double check declarations
+
+## Review
+Submit
+
