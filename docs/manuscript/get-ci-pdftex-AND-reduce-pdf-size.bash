@@ -1,3 +1,6 @@
+
+wget https://github.com/mxochicale/srep2021/raw/pdfs/manuscript.pdf
+mv manuscript.pdf main.pdf
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=main-r.pdf main.pdf
 #    -dPDFSETTINGS=/screen lower quality, smaller size. (72 dpi)
 #    -dPDFSETTINGS=/ebook for better quality, but slightly larger pdfs. (150 dpi)
